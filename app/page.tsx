@@ -1,4 +1,5 @@
 import Hero from "@/components/Hero";
+import Grid from "@/components/Grid";
 import { FloatingNavbar } from "@/components/ui/FloatingNavbar";
 import { navItems } from "@/data";
 
@@ -8,8 +9,8 @@ export default function Home() {
       <div className="max-w-7xl w-full">
         <FloatingNavbar navItems={navItems} />
         <Hero />
-        {/* <Grid />
-        <RecentProjects />
+        <Grid />
+        {/* <RecentProjects />
         <Clients />
         <Experience />
         <Approach />
