@@ -15,7 +15,7 @@ const Hero = () => {
   return (
     <div>
       {isDarkMode ?(
-        <div className="pb-40 pt-70">
+        <div className="pb-40 pt-72">
           <div>
             {/* light blue */}
             <Spotlight
@@ -57,26 +57,26 @@ const Hero = () => {
             initial={{ opacity: 0.0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{
-              delay: 0.4,
-              duration: 4.5,
+              delay: 0.5,
+              duration: 3.5,
               ease: "easeInOut",
             }}
             className="relative flex flex-col gap-4 items-center justify-center"
           >
             <div className="flex justify-center">
-        <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center">
-            <p className="uppercase tracking-widest text-xs text-center text-blue-500 max-w-80 z-10">
-                s00kyoung Park
-            </p>
-            <FlipWords
-              words={["UI Engineer", "UI/UX Designer"]}
-              duration={1150}
-              className="text-center text-[40px] md:text-5xl lg:text-6xl mt-10"
-            />
-        </div>
-      </div>
-      </motion.div>
-    </AuroraBackground>
+              <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center">
+                <p className="uppercase tracking-widest text-xs text-center text-blue-500 max-w-80 z-10">
+                  S00kyoung Park
+                </p>
+                <FlipWords
+                  words={["UI Engineer", "UI/UX Designer"]}
+                  duration={1150}
+                  className="text-center text-[40px] md:text-5xl lg:text-6xl mt-10"
+                />
+              </div>
+            </div>    
+          </motion.div>
+        </AuroraBackground>
       )}
     </div>
   );
