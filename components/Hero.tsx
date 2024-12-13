@@ -1,6 +1,7 @@
-// import { FaLocationArrow } from "react-icons/fa6";
+import { FaLocationArrow } from "react-icons/fa6";
 import { Spotlight } from "./ui/Spotlight";
 import { TextGenerateEffect } from "./ui/TextGenerateEffect";
+import MagicButton from "./ui/MagicButton";
 
 const Hero = () => {
   return (
@@ -35,12 +36,19 @@ const Hero = () => {
                 s00kyoung Park
             </p>
             <TextGenerateEffect
-              words="UI Engineer & UI/UX Designer"
+              words="UI Engineer & UI/UX Designer: Transforming Concept into Seamless Experience"
               className="text-center text-[40px] md:text-5xl lg:text-6xl"
             />
             <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl text-white z-10">
               Hi! I&apos;m Sookyoung Park, a UI Engineer/UIUX Designer based in USA and South Korea.
             </p>
+            <a href="#about">
+            <MagicButton
+              title="Show my work"
+              icon={<FaLocationArrow />}
+              position="right"
+            />
+          </a>
         </div>
       </div>
     </div>
