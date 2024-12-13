@@ -160,7 +160,15 @@ const config = {
   				to: {
   					transform: 'translate(calc(-50% - 0.5rem))'
   				}
-  			}
+  			},
+			aurora: {
+				from: {
+					backgroundPosition: "50% 50%, 50% 50%",
+				},
+				to: {
+					backgroundPosition: "350% 50%, 350% 50%",
+				},
+			}
   		},
   		animation: {
   			'accordion-down': 'accordion-down 0.2s ease-out',
@@ -172,7 +180,8 @@ const config = {
   			third: 'moveInCircle 40s linear infinite',
   			fourth: 'moveHorizontal 40s ease infinite',
   			fifth: 'moveInCircle 20s ease infinite',
-  			scroll: 'scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite'
+  			scroll: 'scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite',
+			aurora: "aurora 60s linear infinite",
   		}
   	}
   },
@@ -214,5 +223,7 @@ function addVariablesForColors({ addBase, theme }: any) {
     ":root": newVars,
   });
 }
+
+
 
 export default config;
