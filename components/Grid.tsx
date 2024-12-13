@@ -4,20 +4,20 @@ import { BentoGrid, BentoGridItem } from "./ui/BentoGrid";
 const Grid = () => {
   return (
     <section id="about">
-      <BentoGrid className="w-full py-20">
-        {gridItems.map((item, i) => (
+      <BentoGrid className="w-full py-20 grid grid-cols-1 md:grid-cols-6 lg:grid-cols-5 md:grid-row-7 gap-4 lg:gap-8 mx-auto">
+        {gridItems.map(({id, title, description, className, img, imgClassName, titleClassName, spareImg}) => (
           <BentoGridItem
-            id={item.id}
-            key={i}
-            title={item.title}
-            description={item.description}
+            id={id}
+            key={id}
+            title={title}
+            description={description}
             // remove icon prop
             // remove original classname condition
-            className={item.className}
-            img={item.img}
-            imgClassName={item.imgClassName}
-            titleClassName={item.titleClassName}
-            spareImg={item.spareImg}
+            className={className}
+            img={img}
+            imgClassName={imgClassName}
+            titleClassName={titleClassName}
+            spareImg={spareImg}
           />
         ))}
       </BentoGrid>
