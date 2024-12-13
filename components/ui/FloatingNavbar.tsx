@@ -8,6 +8,7 @@ import {
 } from "framer-motion";
 import { cn } from "@/utils/cn";
 import Link from "next/link";
+import { ModeToggle } from "./ModeToggle";
 
 export const FloatingNavbar = ({
   navItems,
@@ -21,7 +22,6 @@ export const FloatingNavbar = ({
   className?: string;
 }) => {
   const { scrollYProgress } = useScroll();
-
   const [visible, setVisible] = useState(false);
 
   useMotionValueEvent(scrollYProgress, "change", (current) => {
@@ -31,10 +31,12 @@ export const FloatingNavbar = ({
 
       if (scrollYProgress.get() < 0.05) {
         setVisible(false);
-      } else {
+      } 
+      else {
         if (direction < 0) {
           setVisible(true);
-        } else {
+        } 
+        else {
           setVisible(false);
         }
       }
@@ -72,10 +74,7 @@ export const FloatingNavbar = ({
             <span className="hidden sm:block text-sm">{navItem.name}</span>
           </Link>
         ))}
-        {/* <button className="border text-sm font-medium relative border-neutral-200 dark:border-white/[0.2] text-black dark:text-white px-4 py-2 rounded-full">
-          <span>Login</span>
-          <span className="absolute inset-x-0 w-1/2 mx-auto -bottom-px bg-gradient-to-r from-transparent via-blue-500 to-transparent  h-px" />
-        </button> */}
+        <ModeToggle />
       </motion.div>
     </AnimatePresence>
   );

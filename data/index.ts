@@ -1,7 +1,7 @@
 export const navItems = [
     { name: "About", link: "#about" },
     { name: "Projects", link: "#projects" },
-    // { name: "Resume", link: "#Resume" },
+    { name: "Resume", link: "#resume" },
     { name: "Contact", link: "#contact" },
   ];
   
@@ -204,14 +204,23 @@ export const navItems = [
   export const socialMedia = [
     {
       id: 1,
-      img: "/git.svg",
+      // img: "/git.svg",
+      img: "/linkedin-white.svg",
     },
     {
       id: 2,
-      img: "/twit.svg",
+      // img: "/twit.svg",
+      
+      img: "/github-white.svg",
     },
     {
       id: 3,
-      img: "/link.svg",
+      // img: "/link.svg",
+      img: "/instagram-white.svg",
+    },
+    {
+      id: 4,
+      // img: "/link.svg",
+      img: "/dribbble-white.svg",
     },
   ];

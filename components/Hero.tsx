@@ -1,7 +1,7 @@
-import { FaLocationArrow } from "react-icons/fa6";
 import { Spotlight } from "./ui/Spotlight";
-import { TextGenerateEffect } from "./ui/TextGenerateEffect";
-import MagicButton from "./ui/MagicButton";
+import { FlipWords } from "./ui/FlipWords";
+// import MagicButton from "./ui/MagicButton";
+// import { FaLocationArrow } from "react-icons/fa6";
 
 const Hero = () => {
   return (
@@ -35,20 +35,26 @@ const Hero = () => {
             <p className="uppercase tracking-widest text-xs text-center text-blue-100 max-w-80 z-10">
                 s00kyoung Park
             </p>
-            <TextGenerateEffect
-              words="UI Engineer & UI/UX Designer: Transforming Concept into Seamless Experience"
-              className="text-center text-[40px] md:text-5xl lg:text-6xl"
+            <FlipWords
+              words={["UI Engineer", "UI/UX Designer"]}
+              duration={1150}
+              className="text-center text-[40px] md:text-5xl lg:text-6xl mt-10"
             />
-            <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl text-white z-10">
+            {/* Intro words */}
+            {/* <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-xl text-white z-10 mt-12">
               Hi! I&apos;m Sookyoung Park, a UI Engineer/UIUX Designer based in USA and South Korea.
-            </p>
-            <a href="#about">
+            </p> */}
+            {/* Button
+            
+            -
+            +++++*/}
+            {/* <a href="#about">
             <MagicButton
               title="Show my work"
               icon={<FaLocationArrow />}
               position="right"
             />
-          </a>
+          </a> */}
         </div>
       </div>
     </div>
