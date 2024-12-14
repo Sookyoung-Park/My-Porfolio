@@ -1,10 +1,10 @@
 'use client'
 
+import { useTheme } from "next-themes";
+import { motion } from "framer-motion";
+import { AuroraBackground } from "./ui/AuroraBackground";
 import { Spotlight } from "./ui/Spotlight";
 import { FlipWords } from "./ui/FlipWords";
-import { useTheme } from "next-themes";
-import { AuroraBackground } from "./ui/AuroraBackground";
-import { motion } from "framer-motion";
 // import MagicButton from "./ui/MagicButton";
 // import { FaLocationArrow } from "react-icons/fa6";
 
@@ -15,7 +15,7 @@ const Hero = () => {
   return (
     <div>
       {isDarkMode ?(
-        <div className="pb-40 pt-72">
+        <div className="pb-56 pt-56">
           <div>
             {/* light blue */}
             <Spotlight
@@ -52,7 +52,7 @@ const Hero = () => {
           </div>
         </div>
       ):(
-        <AuroraBackground>
+        <AuroraBackground className="h-[80vh]">
           <motion.div
             initial={{ opacity: 0.0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
