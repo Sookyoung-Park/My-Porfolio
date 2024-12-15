@@ -1,5 +1,6 @@
 'use client'
 import { cn } from "@/utils/cn";
+import { useTheme } from "next-themes";
 import { BackgroundGradientAnimation } from "../GradientBg";
 
 export const BentoGrid = ({
@@ -41,8 +42,21 @@ export const BentoGridItem = ({
   titleClassName?: string;
   spareImg?: string;
 }) => {
+  const { theme, setTheme } = useTheme();
+  const isDarkMode = theme === "dark";
+
   const techStackLeft = ["ReactJS","ReactJS","Typescript","Javascript"];
   const techStackRight = ["HTML", "CSS"];
+
+  const lightModeStyle = {
+    background: "rgb(247,247,247)",
+    backgroundColor: "linear-gradient(90deg, rgba(240,240,240,1) 0%, rgba(220,220,220,1) 100%)",
+  };
+
+  const darkModeStyle = {
+    background: "rgb(4,7,29)",
+    backgroundColor: "linear-gradient(90deg, rgba(4,7,29,1) 0%, rgba(12,14,35,1) 100%)",
+  };
 
   return (
     <div
@@ -51,13 +65,7 @@ export const BentoGridItem = ({
         "row-span-1 relative overflow-hidden rounded-3xl border border-white/[0.1] group/bento hover:shadow-xl transition duration-200 shadow-input dark:shadow-none justify-between flex flex-col space-y-4",
         className
       )}
-      style={{
-        //   add these two
-        //   you can generate the color from here https://cssgradient.io/
-        background: "rgb(4,7,29)",
-        backgroundColor:
-          "linear-gradient(90deg, rgba(4,7,29,1) 0%, rgba(12,14,35,1) 100%)",
-      }}
+      style={isDarkMode ? darkModeStyle : lightModeStyle}
     >
       {/* add img divs */}
       <div className={`${id === 6 && "flex justify-center"} h-full`}>
@@ -101,7 +109,7 @@ export const BentoGridItem = ({
           {/* add text-3xl max-w-96 , remove text-neutral-600 dark:text-neutral-300*/}
           {/* remove mb-2 mt-2 */}
           <div
-            className={`font-sans text-xl lg:text-3xl max-w-96 font-bold z-10 text-white`}
+          className={id===1 ? `font-sans text-xl lg:text-3xl max-w-96 font-bold z-10 text-white` : `font-sans text-xl lg:text-3xl max-w-96 font-bold z-10  text-black-200 dark:text-white-100`}
           >
             {title}
           </div>
