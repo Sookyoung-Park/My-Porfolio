@@ -1,6 +1,6 @@
 "use client";
 
-import { FaFolderOpen} from "react-icons/fa6";
+import {FaFolderOpen} from "react-icons/fa6";
 import { projects } from "@/data";
 import { PinContainer } from "./ui/Pin";
 import MagicButton from "./ui/MagicButton";
