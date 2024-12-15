@@ -1,9 +1,9 @@
 "use client";
-
 import {FaFolderOpen} from "react-icons/fa6";
 import { projects } from "@/data";
 import { PinContainer } from "./ui/Pin";
 import MagicButton from "./ui/MagicButton";
+
 
 const FeatureProjects = () => {
   return (
@@ -54,7 +54,7 @@ const FeatureProjects = () => {
                   {item.iconLists.map((icon, index) => (
                     <div
                       key={index}
-                      className="border border-white/[.2] rounded-full bg-black lg:w-10 lg:h-10 w-8 h-8 flex justify-center items-center"
+                      className="border border-white/[.2] rounded-full bg-black lg:w-9 lg:h-9 w-8 h-8 flex justify-center items-center"
                       style={{
                         transform: `translateX(-${5 * index + 2}px)`,
                       }}
