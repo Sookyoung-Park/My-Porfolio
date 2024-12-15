@@ -1,16 +1,15 @@
 "use client";
 
-import { FaLocationArrow } from "react-icons/fa6";
-
+import { FaFolderOpen} from "react-icons/fa6";
 import { projects } from "@/data";
 import { PinContainer } from "./ui/Pin";
+import MagicButton from "./ui/MagicButton";
 
 const FeatureProjects = () => {
   return (
-    <div className="py-20">
-      <h1 className="heading">
-        A small selection of{" "}
-        <span className="text-purple">recent projects</span>
+    <div className="py-36 max-lg:pt-20 max-lg:pb-10">
+      <h1 className="heading text-purple max-md:text-2xl text-4xl text-bold text-center">
+        Featured Project
       </h1>
       <div className="flex flex-wrap items-center justify-center p-4 gap-16 mt-10">
         {projects.map((item) => (
@@ -64,18 +63,19 @@ const FeatureProjects = () => {
                     </div>
                   ))}
                 </div>
-
-                <div className="flex justify-center items-center">
-                  <p className="flex lg:text-xl md:text-xs text-sm text-purple">
-                    Check Live Site
-                  </p>
-                  <FaLocationArrow className="ms-3" color="#CBACF9" />
-                </div>
               </div>
             </PinContainer>
           </div>
         ))}
+         <a href="test">
+          <MagicButton
+            title="View More Projects"
+            icon={<FaFolderOpen />}
+            position="right"
+          />
+        </a>
       </div>
+     
     </div>
   );
 };
