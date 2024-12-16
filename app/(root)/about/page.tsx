@@ -62,14 +62,54 @@ const About = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           <div className="flex flex-col pr-6 pl-6 pb-2">
             <h3 className="text-lg font-semibold text-neutral-800 dark:text-white">UI/UX Design</h3>
+            {/* <ul className="text-neutral-600 dark:text-neutral-400 mt-2 list-disc pl-6 space-y-2">
+              <li>Wireframing</li>
+              <li>Prototyping</li>
+              <li>User Research</li>
+              <li>Usability Testing</li>
+            </ul> */}
             <p className="text-neutral-600 dark:text-neutral-400 mt-2">Wireframing, Prototyping, User Research, Usability Testing</p>
           </div>
           <div className="flex flex-col pr-6 pl-6 pb-2">
             <h3 className="text-lg font-semibold text-neutral-800 dark:text-white">Web Development</h3>
+            {/* <ul className="text-neutral-600 dark:text-neutral-400 mt-2 list-disc pl-6 space-y-2">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>React</li>
+              <li>Next.js</li>
+              <li>Tailwind CSS</li>
+            </ul> */}
             <p className="text-neutral-600 dark:text-neutral-400 mt-2">HTML, CSS, JavaScript, React, Next.js, Tailwind CSS</p>
           </div>
         </div>
       </div>
+
+      <div className="mt-20 max-w-7xl mx-auto px-5">
+  <h2 className="text-2xl font-bold text-neutral-800 dark:text-white mb-6">Skills</h2>
+  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+    <div className="flex flex-col pr-6 pl-6 pb-2">
+      <h3 className="text-lg font-semibold text-neutral-800 dark:text-white">UI/UX Design</h3>
+      <ul className="text-neutral-600 dark:text-neutral-400 mt-2 list-disc pl-6 space-y-2">
+        <li>Wireframing</li>
+        <li>Prototyping</li>
+        <li>User Research</li>
+        <li>Usability Testing</li>
+      </ul>
+    </div>
+    <div className="flex flex-col pr-6 pl-6 pb-2">
+      <h3 className="text-lg font-semibold text-neutral-800 dark:text-white">Web Development</h3>
+      <ul className="text-neutral-600 dark:text-neutral-400 mt-2 list-disc pl-6 space-y-2">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>React</li>
+        <li>Next.js</li>
+        <li>Tailwind CSS</li>
+      </ul>
+    </div>
+  </div>
+</div>
 
       {/* Footer */}
       <div className="w-full mt-20">
