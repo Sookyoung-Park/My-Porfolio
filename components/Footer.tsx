@@ -40,7 +40,7 @@ const Footer = () => {
       <div className="flex flex-row max-lg:flex-col max-lg:text-center">
         <h1 className="text-black-200 dark:text-white-200 heading lg:max-w-[40vw] text-2xl font-semibold max-lg:hidden">
           Let's build something to change the world! <br/>
-          If you are interested in  <span className="text-purple">collaboration</span>, <br/>feel free to contact me.
+          If you are interested in  <span className="text-blue-700 dark:text-purple">collaboration</span>, <br/>feel free to contact me.
         </h1>
 
         <h1 className=" text-black-200 dark:text-white-200 heading lg:max-w-[48vw] text-2xl font-semibold lg:hidden xl:hidden 2xl:hidden max-lg:pb-8 max-md:pb-2">

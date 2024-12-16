@@ -7,7 +7,7 @@ export const FocusCards = ({ data }: any) => {
       {data.map((card, index) => (
         <div
           key={index}
-          className="relative group h-[50vh] bg-gray-800 rounded-3xl overflow-hidden shadow-lg hover:scale-105 transition-transform duration-300"
+          className="relative group h-[50vh] bg-gray-800 overflow-hidden shadow-lg hover:scale-105 transition-transform duration-300"
         >
           <img
             src={card.img}
