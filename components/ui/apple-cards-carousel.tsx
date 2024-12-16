@@ -7,14 +7,13 @@ import React, {
   useContext,
 } from "react";
 import {
-  // IconArrowNarrowLeft,
-  // IconArrowNarrowRight,
   IconX,
 } from "@tabler/icons-react";
 import { cn } from "@/utils/cn";
 import { AnimatePresence, motion } from "framer-motion";
 import Image, { ImageProps } from "next/image";
 import { useOutsideClick } from "@/hooks/use-outside-click";
+// from here
 
 
 interface CarouselProps {
