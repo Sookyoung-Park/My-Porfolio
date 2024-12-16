@@ -2,6 +2,7 @@
 import Image from "next/image";
 import React from "react";
 import { Carousel, Card } from "@/components/ui/apple-cards-carousel";
+import { TracingBeam } from "@/components/ui/TracingBeam";
 
 export function AppleCardsCarousel() {
   const cards = data.map((card, index) => (
@@ -18,9 +19,11 @@ export function AppleCardsCarousel() {
 const DummyContent = () => {
   return (
     <>
+    <TracingBeam className="px-6">
       {[...new Array(3).fill(1)].map((_, index) => {
         return (
-          <div
+          
+            <div
             key={"dummy-content" + index}
             className="bg-[#F5F5F7] dark:bg-neutral-800 p-8 md:p-14 rounded-3xl mb-4"
           >
@@ -43,6 +46,7 @@ const DummyContent = () => {
           </div>
         );
       })}
+      </TracingBeam>
     </>
   );
 };

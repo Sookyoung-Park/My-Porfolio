@@ -1,4 +1,5 @@
 "use client";
+
 import React, {
   useEffect,
   useRef,
@@ -13,7 +14,7 @@ import { cn } from "@/utils/cn";
 import { AnimatePresence, motion } from "framer-motion";
 import Image, { ImageProps } from "next/image";
 import { useOutsideClick } from "@/hooks/use-outside-click";
-// from here
+
 
 
 interface CarouselProps {
@@ -198,7 +199,6 @@ export const Card = ({
     <>
       <AnimatePresence>
         {open && (
-
           <div className="fixed inset-0 h-screen z-50 overflow-auto">
             <motion.div
               initial={{ opacity: 0 }}
@@ -235,6 +235,7 @@ export const Card = ({
               <div className="py-10">{card.content}</div>
             </motion.div>
           </div>
+          
         )}
       </AnimatePresence>
       <motion.button
