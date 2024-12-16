@@ -4,9 +4,8 @@ import { navItems } from "@/data";
 
 import Hero from "@/components/Hero";
 import Grid from "@/components/Grid";
-import Expertise from "@/components/Expertise";
 import FeatureProjects from "@/components/FeatureProjects";
-import Experience from "@/components/Experience";
+// import Experience from "@/components/Experience";
 import Footer from "@/components/Footer";
 
 export default function Home() {
@@ -15,10 +14,9 @@ export default function Home() {
       <div className="max-w-7xl w-full">
         <FloatingNavbar navItems={navItems} />
         <Hero />
-        {/* <Expertise /> */}
         <Grid />
         <FeatureProjects />
-        <Experience />
+        {/* <Experience /> */}
         <Footer />
       </div>
     </main>

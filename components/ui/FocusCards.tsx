@@ -18,7 +18,7 @@ export const FocusCards = ({ data }: any) => {
           {/* content */}
           <div className="absolute inset-0 bg-black bg-opacity-80 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 p-5">
             <h2 className="text-white font-bold text-2xl">{card.title}</h2>
-            <p className="text-gray-300 mt-2 text-left text-sm">{card.des}</p>
+            <p className="text-gray-300 mt-2 text-left text-sm max-w-[360px]">{card.des}</p>
             <div className="flex items-center mt-4">
               {card.iconLists.map((icon, i) => (
                 <img
