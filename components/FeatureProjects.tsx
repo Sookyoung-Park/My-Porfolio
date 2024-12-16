@@ -20,7 +20,6 @@ const FeatureProjects = () => {
               position="right"
             />
         </Link>
-        {/* </a> */}
       </div>
     </div>
   );

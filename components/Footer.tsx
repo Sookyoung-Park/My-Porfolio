@@ -1,82 +1,77 @@
 'use client'
-import { useState } from "react";
-import { IoCopyOutline } from "react-icons/io5";
-import Lottie from "react-lottie";
-import { FaLocationArrow } from "react-icons/fa6";
+// import { useState } from "react";
+// import { IoCopyOutline } from "react-icons/io5";
+// import Lottie from "react-lottie";
 import { socialMedia } from "@/data";
-import MagicButton from "./ui/MagicButton";
-import animationData from "@/data/confetti.json";
+// import MagicButton from "./ui/MagicButton";
+// import animationData from "@/data/confetti.json";
+import ContactForm from "./ContactForm";
 
 const Footer = () => {
-  const [copied, setCopied] = useState(false);
+  // const [copied, setCopied] = useState(false);
 
-  const defaultOptions = {
-    loop: copied,
-    autoplay: copied,
-    animationData: animationData,
-    rendererSettings: {
-      preserveAspectRatio: "xMidYMid slice",
-    },
-  };
+  // const defaultOptions = {
+  //   loop: copied,
+  //   autoplay: copied,
+  //   animationData: animationData,
+  //   rendererSettings: {
+  //     preserveAspectRatio: "xMidYMid slice",
+  //   },
+  // };
 
 
-  const handleCopy = () => {
-    const text = "parksk971031@gmail.com";
-    navigator.clipboard.writeText(text);
-    setCopied(true);
-  };
+  // const handleCopy = () => {
+  //   const text = "parksk971031@gmail.com";
+  //   navigator.clipboard.writeText(text);
+  //   setCopied(true);
+  // };
 
   return (
     <footer className="w-full pt-20 pb-10" id="contact">
       {/* background grid */}
-      <div className="w-full absolute left-0 -bottom-72 min-h-96">
+      {/* <div className="w-full absolute left-0 -bottom-72 min-h-96">
         <img
           src="/footer-grid.svg"
           alt="grid"
           className="w-full h-full opacity-50 "
         />
-      </div>
+      </div> */}
 
-      <div className="flex flex-col items-center">
-        <h1 className="heading lg:max-w-[45vw]">
-          Ready to take <span className="text-purple">your</span> digital
-          presence to the next level?
+      <div className="flex flex-row max-lg:flex-col max-lg:text-center">
+        <h1 className="text-black-200 dark:text-white-200 heading lg:max-w-[40vw] text-2xl font-semibold max-lg:hidden">
+          Let's build something to change the world! <br/>
+          If you are interested in  <span className="text-purple">collaboration</span>, <br/>feel free to contact me.
         </h1>
-        <p className="text-white-200 md:mt-10 my-5 text-center">
-          Reach out to me today and let&apos;s discuss how I can help you
-          achieve your goals.
-        </p>
+
+        <h1 className=" text-black-200 dark:text-white-200 heading lg:max-w-[48vw] text-2xl font-semibold lg:hidden xl:hidden 2xl:hidden max-lg:pb-8 max-md:pb-2">
+          Let's build something to change the world! <br/>
+          If you are interested in  <span className="text-purple">collaboration</span>, 
+          <br/>feel free to contact me!
+        </h1>
+
+        <div className="flex-1 max-lg:flex-col max-lg:text-center justify-center">
+          <ContactForm />
+        </div>  
         
-        <a href="mailto:contact@jsmastery.pro">
+
+        {/* confetti & email copy button */}
+        {/* <div className="mt-5 relative">
+           <div
+            className={`absolute -bottom-5 right-0 ${copied ? "block" : "block"
+              }`}
+          >
+            <img src="/confetti.gif" alt="confetti" />
+            <Lottie options={defaultOptions} height={200} width={400} />
+          </div>
+
           <MagicButton
-            title="Let's get in touch"
-            icon={<FaLocationArrow />}
-            position="right"
+            title={copied ? "Email is Copied!" : "Copy my email address"}
+            icon={<IoCopyOutline />}
+            position="left"
+            handleClick={handleCopy}
+            otherClasses="!bg-[#161A31]"
           />
-        </a>
-
-              {/* test */}
-      <div className="mt-5 relative">
-              {/* button border magic from tailwind css buttons  */}
-              {/* add rounded-md h-8 md:h-8, remove rounded-full */}
-              {/* remove focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50 */}
-              {/* add handleCopy() for the copy the text */}
-              <div
-                className={`absolute -bottom-5 right-0 ${copied ? "block" : "block"
-                  }`}
-              >
-                <img src="/confetti.gif" alt="confetti" />
-                <Lottie options={defaultOptions} height={200} width={400} />
-              </div>
-
-              <MagicButton
-                title={copied ? "Email is Copied!" : "Copy my email address"}
-                icon={<IoCopyOutline />}
-                position="left"
-                handleClick={handleCopy}
-                otherClasses="!bg-[#161A31]"
-              />
-            </div>
+        </div> */}
       </div>
 
 
