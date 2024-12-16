@@ -16,12 +16,14 @@ export const TracingBeam = ({
   children: React.ReactNode;
   className?: string;
 }) => {
+  // detect scroll
   const ref = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
     target: ref,
     offset: ["start start", "end start"],
   });
 
+  // control svg height
   const contentRef = useRef<HTMLDivElement>(null);
   const [svgHeight, setSvgHeight] = useState(0);
 
@@ -31,6 +33,7 @@ export const TracingBeam = ({
     }
   }, []);
 
+  // calculate animation value 
   const y1 = useSpring(
     useTransform(scrollYProgress, [0, 0.8], [50, svgHeight]),
     {
@@ -46,11 +49,14 @@ export const TracingBeam = ({
     }
   );
 
+
+  
   return (
     <motion.div
       ref={ref}
       className={cn("relative w-full max-w-4xl mx-auto h-full", className)}
     >
+      {/* scroll trigger animation - circle & shadow */}
       <div className="absolute -left-4 md:-left-20 top-3">
         <motion.div
           transition={{
@@ -63,7 +69,7 @@ export const TracingBeam = ({
                 ? "none"
                 : "rgba(0, 0, 0, 0.24) 0px 3px 8px",
           }}
-          className="ml-[27px] h-4 w-4 rounded-full border border-netural-200 shadow-sm flex items-center justify-center"
+          className="hidden ml-[12px] h-4 w-4 rounded-full border border-netural-200 shadow-sm flex items-center justify-center"
         >
           <motion.div
             transition={{
@@ -79,15 +85,17 @@ export const TracingBeam = ({
             className="h-2 w-2  rounded-full border border-neutral-300 bg-white"
           />
         </motion.div>
+
+        {/* svg tracing & animation */}
         <svg
           viewBox={`0 0 20 ${svgHeight}`}
           width="20"
-          height={svgHeight} // Set the SVG height
-          className=" ml-4 block"
+          height={svgHeight}
+          className="block"
           aria-hidden="true"
         >
           <motion.path
-            d={`M 1 0V -36 l 18 24 V ${svgHeight * 0.8} l -18 24V ${svgHeight}`}
+            d={`M 1 0 V ${svgHeight}`}
             fill="none"
             stroke="#9091A0"
             strokeOpacity="0.16"
@@ -96,7 +104,7 @@ export const TracingBeam = ({
             }}
           ></motion.path>
           <motion.path
-            d={`M 1 0V -36 l 18 24 V ${svgHeight * 0.8} l -18 24V ${svgHeight}`}
+            d={`M 1 0 V ${svgHeight}`}
             fill="none"
             stroke="url(#gradient)"
             strokeWidth="1.25"

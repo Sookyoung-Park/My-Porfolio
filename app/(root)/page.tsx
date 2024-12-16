@@ -5,7 +5,6 @@ import { navItems } from "@/data";
 import Hero from "@/components/Hero";
 import Grid from "@/components/Grid";
 import FeatureProjects from "@/components/FeatureProjects";
-// import Experience from "@/components/Experience";
 import Footer from "@/components/Footer";
 
 export default function Home() {
