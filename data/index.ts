@@ -67,7 +67,7 @@ export const navItems = [
       id: 4,
       title: "Clone Apple Iphone 3D Website",
       des: "A clone of Apple's iPhone 15 Pro website using React.js and TailwindCSS with Three.js and GSAP.",
-      img: "/projects/apple-webiste/apple-website-mockup.png",
+      img: "/projects/apple-website/apple-website-mockup.png",
       iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
       link: "https://github.com/adrianhajdin/iphone",
     },
