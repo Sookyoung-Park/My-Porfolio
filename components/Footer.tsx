@@ -1,42 +1,10 @@
 'use client'
-// import { useState } from "react";
-// import { IoCopyOutline } from "react-icons/io5";
-// import Lottie from "react-lottie";
 import { socialMedia } from "@/data";
-// import MagicButton from "./ui/MagicButton";
-// import animationData from "@/data/confetti.json";
 import ContactForm from "./ContactForm";
 
 const Footer = () => {
-  // const [copied, setCopied] = useState(false);
-
-  // const defaultOptions = {
-  //   loop: copied,
-  //   autoplay: copied,
-  //   animationData: animationData,
-  //   rendererSettings: {
-  //     preserveAspectRatio: "xMidYMid slice",
-  //   },
-  // };
-
-
-  // const handleCopy = () => {
-  //   const text = "parksk971031@gmail.com";
-  //   navigator.clipboard.writeText(text);
-  //   setCopied(true);
-  // };
-
   return (
     <footer className="w-full pt-20 pb-10" id="contact">
-      {/* background grid */}
-      {/* <div className="w-full absolute left-0 -bottom-72 min-h-96">
-        <img
-          src="/footer-grid.svg"
-          alt="grid"
-          className="w-full h-full opacity-50 "
-        />
-      </div> */}
-
       <div className="flex flex-row max-lg:flex-col max-lg:text-center">
         <h1 className="text-black-200 dark:text-white-200 heading lg:max-w-[40vw] text-2xl font-semibold max-lg:hidden">
           Let's build something to change the world! <br/>
@@ -51,60 +19,38 @@ const Footer = () => {
 
         <div className="flex-1 max-lg:flex-col max-lg:text-center justify-center">
           <ContactForm />
-        </div>  
-        
-
-        {/* confetti & email copy button */}
-        {/* <div className="mt-5 relative">
-           <div
-            className={`absolute -bottom-5 right-0 ${copied ? "block" : "block"
-              }`}
-          >
-            <img src="/confetti.gif" alt="confetti" />
-            <Lottie options={defaultOptions} height={200} width={400} />
-          </div>
-
-          <MagicButton
-            title={copied ? "Email is Copied!" : "Copy my email address"}
-            icon={<IoCopyOutline />}
-            position="left"
-            handleClick={handleCopy}
-            otherClasses="!bg-[#161A31]"
-          />
-        </div> */}
+        </div>
       </div>
 
-
-
-      
-      <div className="flex mt-40 md:flex-row flex-col justify-between items-center">
-        <p className="md:text-base text-sm md:font-normal font-light text-white">
+      <div className="flex mt-40 md:flex-row flex-col justify-between mb-24">
+        <p className="text-[12px] md:font-normal font-light dark:text-white text-black-200 max-md:text-center">
           All right reserved by Sookyoung Park
         </p>
 
-        <div className="flex items-center md:gap-3 gap-6">
-              <p className="text-white">
-                Location
-              </p>
+        <div className="md:gap-3 gap-6">
+          <div className="max-w-7xl w-full px-5 max-md:hidden">
+              <ul className="text-neutral-600 dark:text-neutral-400 list-disc space-y-2 text-[14px]">
+                <li>Seoul, South Korea</li>
+                <li>New York, USA</li>
+              </ul>
+          </div>
         </div>
 
-        <div className="flex items-center md:gap-3 gap-6">
-          {socialMedia.map((info) => (
-            <div
-              key={info.id}
-              className="w-10 h-10 cursor-pointer flex justify-center items-center backdrop-filter backdrop-blur-lg saturate-180 bg-opacity-75 bg-black-200 rounded-lg border border-black-300"
-            >
-              <img src={info.img} alt="icons" width={24} height={24} />
-            </div>
-          ))}
+        <div className="flex items-center md:gap-3 gap-6  max-md:hidden">
+        <div className="max-w-7xl w-full px-5">
+              <ul className="text-neutral-600 dark:text-neutral-400 list-disc space-y-2 text-[14px]">
+                <li>PROJECT</li>
+                <li>RESUME</li>
+              </ul>
+          </div>
         </div>
 
-        <div className="flex items-center md:gap-3 gap-6">
+        <div className="flex items-center md:gap-3 gap-6 max-md:mt-6 max-md:justify-center">
           {socialMedia.map((info) => (
-            <a href="https://www.s00kyoung.com">
+            <a href={info.link}>
               <div
                 key={info.id}
-                className="w-10 h-10 cursor-pointer flex justify-center items-center backdrop-filter backdrop-blur-lg saturate-180 bg-opacity-75 bg-black-200 rounded-lg border border-black-300"
+                className="w-9 h-9 cursor-pointer flex justify-center items-center backdrop-filter backdrop-blur-lg saturate-180 bg-opacity-75  bg-black-100 dark:bg-black-200/70 rounded-lg border border-black-300/5"
               >
                 <img src={info.img} alt="icons" width={24} height={24} />
               </div>

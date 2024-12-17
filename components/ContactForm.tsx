@@ -94,7 +94,7 @@ const ContactForm = () => {
                                 <label className="text-sm mb-2 text-black-200 dark:text-white-200 font-medium">Message</label>
                                 <textarea
                                     name="message"
-                                    placeholder="Your message here"
+                                    placeholder="Please feel free to let me know anything you want!"
                                     className="border text-sm p-3 bg-transparent placeholder-p4/20 border-black/[0.1] dark:border-white/[0.2] focus:outline-none"
                                     rows="4"
                                 />
