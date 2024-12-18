@@ -1,6 +1,7 @@
 'use client'
 import { socialMedia } from "@/data";
 import ContactForm from "./ContactForm";
+import Link from "next/link";
 
 const Footer = () => {
   return (
@@ -39,8 +40,12 @@ const Footer = () => {
         <div className="flex items-center md:gap-3 gap-6  max-md:hidden">
         <div className="max-w-7xl w-full px-5">
               <ul className="text-neutral-600 dark:text-neutral-400 list-disc space-y-2 text-[14px]">
-                <li>PROJECT</li>
-                <li>RESUME</li>
+                <li>
+                  <Link href="/project-page">PROJECTS</Link>
+                </li>
+                <li>
+                  <Link href="/about">RESUME</Link>
+                </li>
               </ul>
           </div>
         </div>
