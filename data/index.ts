@@ -13,7 +13,7 @@ export const navItems = [
       className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
       imgClassName: "w-full h-full",
       titleClassName: "justify-end",
-      img: "/b1.svg",
+      img: "",
       spareImg: "",
     },
     {
@@ -114,6 +114,16 @@ export const navItems = [
     },
     {
       id: 4,
+      title: "Design On Landing Page",
+      des: "A SaaS website built with React.js and Tailwind CSS, showcasing modern UI/UX principles.",
+      img: "/projects/apple-website/apple-website-mockup.png",
+      iconLists: ["/re.svg", "/tail.svg", "/ts.svg"],
+      link: "https://github.com/Sookyoung-Park/Saas-App-Landing-Page",
+      badge: ["FrontEnd"],
+      isGithub: true,
+    },
+    {
+      id: 5,
       title: " PLATEUS",
       des: "A service for busy college students who have unique dietary and nutritional needs that cannot be met by the college dining services.",
       img: "/projects/plateus/plateus-mockup.png",
@@ -123,7 +133,7 @@ export const navItems = [
       isGithub: false,
     },
     {
-      id: 5,
+      id: 6,
       title: "NAME SPACE",
       des: "Data Visualized Generative Media Art",
       img: "/projects/name-space/name-space-mockup.gif",
@@ -133,7 +143,7 @@ export const navItems = [
       isGithub: false,
     },
     {
-      id: 6,
+      id: 7,
       title: "Clone Apple Iphone 3D Website",
       des: "A clone of Apple's iPhone 15 Pro website using React.js and TailwindCSS with Three.js and GSAP.",
       img: "/projects/apple-website/apple-website-mockup.png",
@@ -143,16 +153,6 @@ export const navItems = [
       isGithub: true,
     },
     {
-    id: 7,
-    title: "Clone Apple Iphone 3D Website",
-    des: "A clone of Apple's iPhone 15 Pro website using React.js and TailwindCSS with Three.js and GSAP.",
-    img: "/projects/apple-website/apple-website-mockup.png",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
-    link: "https://github.com/Sookyoung-Park/Apple-Website",
-    badge: ["FullStack"],
-    isGithub: true,
-  },
-  {
     id: 8,
     title: "Clone Apple Iphone 3D Website",
     des: "A clone of Apple's iPhone 15 Pro website using React.js and TailwindCSS with Three.js and GSAP.",
@@ -170,8 +170,9 @@ export const navItems = [
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
     link: "https://github.com/Sookyoung-Park/Apple-Website",
     badge: ["FullStack"],
-    github: true,
+    isGithub: true,
   },
+  
   ];
 
   export const socialMedia = [

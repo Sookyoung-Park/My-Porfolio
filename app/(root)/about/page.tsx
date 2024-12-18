@@ -10,7 +10,7 @@ const About = () => {
     <main className="relative bg-white dark:bg-black-100 flex justify-center items-center flex-col overflow-hidden mx-auto sm:px-10 px-5">
       <div className="flex flex-row items-center justify-center text-center mt-20">
         <img
-          src="/p3.svg" 
+          src="/projects/meu/meu-mockup.png" 
           alt="Profile Picture"
           className="w-60 h-60 rounded-full object-cover mb-4"
         />

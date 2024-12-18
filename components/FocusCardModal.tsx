@@ -29,8 +29,9 @@ export const FocusCardModal = ({ card, isOpen, onClose }: any) => {
             </button>
             {/* <div className="py-10">{card.content}</div> */}
             <div className="py-10">
+              {/* placeholder */}
                 <Image
-                    src="/p1.svg" width={1000} height={100} alt="test" />
+                    src="/projects/meu/meu-mockup.png" width={1000} height={100} alt="test" />
                 welrjaeofij owiejfl kewjfo iweajofijwealkfj laewkfj owiejfoiwj oeifjlwkaejf
             >welrjaeofij owiejfl kewjfo iweajofijwealkfj laewkfj owiejfoiwj oeifjlwkaejf
             >welrjaeofij owiejfl kewjfo iweajofijwealkfj laewkfj owiejfoiwj oeifjlwkaejf
