@@ -8,23 +8,23 @@ import { IoIosSend } from "react-icons/io";
 const ContactForm = () => {
     const form = useRef('');
     const [copied, setCopied] = useState(false);
-    const [submit, setSubmit] = useState(false);
+    // const [submit, setSubmit] = useState(false);
     const [successMessage, setSuccessMessage] = useState('');
 
-      const defaultOptions = {
-        loop: copied,
-        autoplay: copied,
-        animationData: animationData,
-        rendererSettings: {
-        preserveAspectRatio: "xMidYMid slice",
-        },
-    };
+    //   const defaultOptions = {
+    //     loop: copied,
+    //     autoplay: copied,
+    //     animationData: animationData,
+    //     rendererSettings: {
+    //     preserveAspectRatio: "xMidYMid slice",
+    //     },
+    // };
 
-      const handleCopy = () => {
-        const text = "parksk971031@gmail.com";
-        navigator.clipboard.writeText(text);
-        setCopied(true);
-    };
+    //   const handleCopy = () => {
+    //     const text = "parksk971031@gmail.com";
+    //     navigator.clipboard.writeText(text);
+    //     setCopied(true);
+    // };
 
     const handleSubmit = () => {
         console.log('submitted')
