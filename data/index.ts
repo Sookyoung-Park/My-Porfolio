@@ -72,136 +72,84 @@ export const navItems = [
       des: "A clone of Apple's iPhone 15 Pro website using React.js and TailwindCSS with Three.js and GSAP.",
       img: "/projects/apple-website/apple-website-mockup.png",
       iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
-      link: "https://github.com/adrianhajdin/iphone",
+      link: "https://github.com/Sookyoung-Park/Apple-Website",
       badge: ["FullStack"],
     },
   ];
-  
-  export const testimonials = [
-    {
-      quote:
-        "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-      name: "Michael Johnson",
-      title: "Director of AlphaStream Technologies",
-    },
-    {
-      quote:
-        "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-      name: "Michael Johnson",
-      title: "Director of AlphaStream Technologies",
-    },
-    {
-      quote:
-        "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-      name: "Michael Johnson",
-      title: "Director of AlphaStream Technologies",
-    },
-    {
-      quote:
-        "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-      name: "Michael Johnson",
-      title: "Director of AlphaStream Technologies",
-    },
-    {
-      quote:
-        "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-      name: "Michael Johnson",
-      title: "Director of AlphaStream Technologies",
-    },
-  ];
-  
-  export const companies = [
+
+  export const AllProjects = [
     {
       id: 1,
-      name: "cloudinary",
-      img: "/cloud.svg",
-      nameImg: "/cloudName.svg",
+      title: "MeU",
+      des: "A digital solution to enhance the connections between partners navigating the challenges of long-distance relationships.",
+      img: "/projects/meu/meu-mockup.png",
+      iconLists: ["/figma.svg", "/re.svg", "/mogodb.svg" ],
+      link: "https://github.com/adrianhajdin?tab=repositories",
+      badge: ["UIUX Design", "FullStack"],
+      github: false,
     },
     {
       id: 2,
-      name: "appwrite",
-      img: "/app.svg",
-      nameImg: "/appName.svg",
+      title: " PLATEUS",
+      des: "A service for busy college students who have unique dietary and nutritional needs that cannot be met by the college dining services.",
+      img: "/projects/plateus/plateus-mockup.png",
+      iconLists: ["/figma.svg"],
+      link: "https://github.com/adrianhajdin/zoom-clone",
+      badge: ["UIUX Design"],
+      github: false,
     },
     {
       id: 3,
-      name: "HOSTINGER",
-      img: "/host.svg",
-      nameImg: "/hostName.svg",
+      title: "NAME SPACE",
+      des: "Data Visualized Generative Media Art",
+      img: "/projects/name-space/name-space-mockup.gif",
+      iconLists: ["/firestore.svg","p5.svg"],
+      link: "https://github.com/adrianhajdin/ai_saas_app",
+      badge: ["Media Art", "FrontEnd"],
+      github: false,
     },
     {
       id: 4,
-      name: "stream",
-      img: "/s.svg",
-      nameImg: "/streamName.svg",
+      title: "Clone Apple Iphone 3D Website",
+      des: "A clone of Apple's iPhone 15 Pro website using React.js and TailwindCSS with Three.js and GSAP.",
+      img: "/projects/apple-website/apple-website-mockup.png",
+      iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
+      link: "https://github.com/Sookyoung-Park/Apple-Website",
+      badge: ["FullStack"],
+      github: true,
     },
     {
-      id: 5,
-      name: "docker.",
-      img: "/dock.svg",
-      nameImg: "/dockerName.svg",
-    },
+    id: 5,
+    title: "Clone Apple Iphone 3D Website",
+    des: "A clone of Apple's iPhone 15 Pro website using React.js and TailwindCSS with Three.js and GSAP.",
+    img: "/projects/apple-website/apple-website-mockup.png",
+    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
+    link: "https://github.com/Sookyoung-Park/Apple-Website",
+    badge: ["FullStack"],
+    github: true,
+  },
+  {
+    id: 6,
+    title: "Clone Apple Iphone 3D Website",
+    des: "A clone of Apple's iPhone 15 Pro website using React.js and TailwindCSS with Three.js and GSAP.",
+    img: "/projects/apple-website/apple-website-mockup.png",
+    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
+    link: "https://github.com/Sookyoung-Park/Apple-Website",
+    badge: ["FullStack"],
+    github: true,
+  },
+  {
+    id: 7,
+    title: "Clone Apple Iphone 3D Website",
+    des: "A clone of Apple's iPhone 15 Pro website using React.js and TailwindCSS with Three.js and GSAP.",
+    img: "/projects/apple-website/apple-website-mockup.png",
+    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
+    link: "https://github.com/Sookyoung-Park/Apple-Website",
+    badge: ["FullStack"],
+    github: true,
+  },
   ];
 
-  export const ExpertiseData = [
-    {
-      id: 1,
-      title: "Product Design",
-      desc: [
-        "User Experience (UX) Design",
-        "User Interface(UI) Design",
-        "Prototyping",
-        "User Testing",
-      ],
-      className: "md:col-span-2",
-      thumbnail: "/exp1.svg",
-    },
-    {
-      id: 2,
-      title: "Software Development",
-      desc: [
-        "React & React Native",
-        "Node.js",
-        "Javascipt",
-        "HTML / CSS",
-        "GIT",
-      ],
-      className: "md:col-span-2", // change to md:col-span-2
-      thumbnail: "/exp2.svg",
-    },
-  ];
-  
-  export const workExperience = [
-    {
-      id: 1,
-      title: "Frontend Engineer Intern",
-      desc: "Assisted in the development of a web-based platform using React.js, enhancing interactivity.",
-      className: "md:col-span-2",
-      thumbnail: "/exp1.svg",
-    },
-    {
-      id: 2,
-      title: "Mobile App Dev - JSM Tech",
-      desc: "Designed and developed mobile app for both iOS & Android platforms using React Native.",
-      className: "md:col-span-2", // change to md:col-span-2
-      thumbnail: "/exp2.svg",
-    },
-    {
-      id: 3,
-      title: "Freelance App Dev Project",
-      desc: "Led the dev of a mobile app for a client, from initial concept to deployment on app stores.",
-      className: "md:col-span-2", // change to md:col-span-2
-      thumbnail: "/exp3.svg",
-    },
-    {
-      id: 4,
-      title: "Lead Frontend Developer",
-      desc: "Developed and maintained user-facing features using modern frontend technologies.",
-      className: "md:col-span-2",
-      thumbnail: "/exp4.svg",
-    },
-  ];
-  
   export const socialMedia = [
     {
       id: 1,

@@ -2,6 +2,7 @@
 import { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { IconX } from "@tabler/icons-react";
+import Image from "next/image";
 
 export const FocusCardModal = ({ card, isOpen, onClose }: any) => {
   return (
@@ -27,7 +28,31 @@ export const FocusCardModal = ({ card, isOpen, onClose }: any) => {
               <IconX className="h-6 w-6 text-neutral-100 dark:text-neutral-900" />
             </button>
             {/* <div className="py-10">{card.content}</div> */}
-            <div className="py-10">welrjaeofij owiejfl kewjfo iweajofijwealkfj laewkfj owiejfoiwj oeifjlwkaejf</div>
+            <div className="py-10">
+                <Image
+                    src="/p1.svg" width={1000} height={100} alt="test" />
+                welrjaeofij owiejfl kewjfo iweajofijwealkfj laewkfj owiejfoiwj oeifjlwkaejf
+            >welrjaeofij owiejfl kewjfo iweajofijwealkfj laewkfj owiejfoiwj oeifjlwkaejf
+            >welrjaeofij owiejfl kewjfo iweajofijwealkfj laewkfj owiejfoiwj oeifjlwkaejf
+            >welrjaeofij owiejfl kewjfo iweajofijwealkfj laewkfj owiejfoiwj oeifjlwkaejf</div>
+            >welrjaeofij owiejfl kewjfo iweajofijwealkfj laewkfj owiejfoiwj oeifjlwkaejf
+            >welrjaeofij owiejfl kewjfo iweajofijwealkfj laewkfj owiejfoiwj oeifjlwkaejf
+            >welrjaeofij owiejfl kewjfo iweajofijwealkfj laewkfj owiejfoiwj oeifjlwkaejf
+
+            >welrjaeofij owiejfl kewjfo iweajofijwealkfj laewkfj owiejfoiwj oeifjlwkaejf
+            >welrjaeofij owiejfl kewjfo iweajofijwealkfj laewkfj owiejfoiwj oeifjlwkaejf
+
+            >welrjaeofij owiejfl kewjfo iweajofijwealkfj laewkfj owiejfoiwj oeifjlwkaejf
+            >welrjaeofij owiejfl kewjfo iweajofijwealkfj laewkfj owiejfoiwj oeifjlwkaejf
+            >welrjaeofij owiejfl kewjfo iweajofijwealkfj laewkfj owiejfoiwj oeifjlwkaejf
+            >welrjaeofij owiejfl kewjfo iweajofijwealkfj laewkfj owiejfoiwj oeifjlwkaejf
+            >welrjaeofij owiejfl kewjfo iweajofijwealkfj laewkfj owiejfoiwj oeifjlwkaejf
+
+            >welrjaeofij owiejfl kewjfo iweajofijwealkfj laewkfj owiejfoiwj oeifjlwkaejf
+            >welrjaeofij owiejfl kewjfo iweajofijwealkfj laewkfj owiejfoiwj oeifjlwkaejf
+            >welrjaeofij owiejfl kewjfo iweajofijwealkfj laewkfj owiejfoiwj oeifjlwkaejf
+            >welrjaeofij owiejfl kewjfo iweajofijwealkfj laewkfj owiejfoiwj oeifjlwkaejf
+            >welrjaeofij owiejfl kewjfo iweajofijwealkfj laewkfj owiejfoiwj oeifjlwkaejf
           </motion.div>
         </div>
       )}

@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { featuredProjects } from "@/data";
-import Link from "next/link";
 import Image from "next/image";
 import { FocusCardModal } from "../FocusCardModal";
 
