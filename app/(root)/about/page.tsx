@@ -15,23 +15,21 @@ const About = () => {
           className="w-60 h-60 rounded-full object-cover mb-4"
         />
         <div className="flex-col text-left ml-16">
-        <h1 className="text-5xl my-6 font-bold text-neutral-800 dark:text-white">Sookyoung Park</h1>
-        {/* <p className="text-lg text-neutral-600 dark:text-neutral-400 mt-2">UI/UX Designer & UI Developer</p> */}
-        <p className="text-base text-neutral-600 dark:text-neutral-400 max-w-2xl mx-auto mt-4">
-          I am a unique combination of a designer and developer with a background in design, art, and computer science.
-          My skills range from UI/UX design to implementation, and I have professional experience working in both areas.
-        </p>
-        <div className="mt-3 relative">
-          <MagicButton
-              title={"View Resume"}
-              icon={<IoIosSend />}
-              position="left"
-              // handleClick={handleSubmit}
-          />
-          {/* <button type="submit" onClick={() => handleSubmit()}/> */}
+          <h1 className="text-5xl my-6 font-bold text-neutral-800 dark:text-white">Sookyoung Park</h1>
+          <p className="text-base text-neutral-600 dark:text-neutral-400 max-w-2xl mx-auto mt-4">
+            I am a unique combination of a designer and developer with a background in design, art, and computer science.
+            My skills range from UI/UX design to implementation, and I have professional experience working in both areas.
+          </p>
+          <div className="mt-3 relative">
+            <MagicButton
+                title={"View Resume"}
+                icon={<IoIosSend />}
+                position="left"
+                // handleClick={handleSubmit}
+            />
+            {/* <button type="submit" onClick={() => handleSubmit()}/> */}
+          </div>
         </div>
-        </div>
-        
       </div>
 
       {/* Education Section */}
