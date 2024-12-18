@@ -11,13 +11,13 @@ const FeatureProjects = () => {
         Featured Project
       </h1>
       <div className="flex flex-wrap items-center justify-center p-4 gap-16 mt-10 ">
-      <FocusCards />
-          <Link href="/project-page">
-            <MagicButton
-              title="View More Projects"
-              icon={<FaFolderOpen />}
-              position="right"
-            />
+        <FocusCards />
+        <Link href="/project-page">
+          <MagicButton
+            title="View More Projects"
+            icon={<FaFolderOpen />}
+            position="right"
+          />
         </Link>
       </div>
     </div>

@@ -1,7 +1,7 @@
 "use client";
-import { AppleCardsCarousel } from "./ui/AppleCardsCarousel";
 import { FloatingDock } from "./ui/floating-dock";
 import Image from "next/image";
+import { FocusCards } from "./ui/FocusCards";
 
 const links = [
   {
@@ -48,7 +48,7 @@ const AllProject = () => {
       <FloatingDock
         items={links}
       />
-      <AppleCardsCarousel />
+      <FocusCards />
   </div>
   );
 };
