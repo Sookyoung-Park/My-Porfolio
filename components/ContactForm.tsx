@@ -67,7 +67,7 @@ const ContactForm = () => {
                                         type="text"
                                         name="firstName"
                                         placeholder="First Name"
-                                        className="border text-sm p-3 bg-transparent placeholder-p4/20 border-black/[0.1] dark:border-white/[0.2] focus:outline-none"
+                                        className="dark:text-white-100 font-medium border text-sm p-3 bg-transparent placeholder-p4/20 border-black/[0.1] dark:border-white/[0.2] focus:outline-none"
                                     />
                                 </div>
                                 <div className="flex flex-col w-full md:w-1/2 text-left">
@@ -76,7 +76,7 @@ const ContactForm = () => {
                                         type="text"
                                         name="lastName"
                                         placeholder="Last Name"
-                                        className="border text-sm p-3 bg-transparent placeholder-p4/20 border-black/[0.1] dark:border-white/[0.2] focus:outline-none"
+                                        className="dark:text-white-100 font-medium border text-sm p-3 bg-transparent placeholder-p4/20 border-black/[0.1] dark:border-white/[0.2] focus:outline-none"
                                     />
                                 </div>
                             </div>
@@ -87,7 +87,7 @@ const ContactForm = () => {
                                     type="email"
                                     name="user_email"
                                     placeholder="Email"
-                                    className="border text-sm p-3 bg-transparent placeholder-p4/20 border-black/[0.1] dark:border-white/[0.2] focus:outline-none"
+                                    className="dark:text-white-100 font-medium border text-sm p-3 bg-transparent placeholder-p4/20 border-black/[0.1] dark:border-white/[0.2] focus:outline-none"
                                 />
                             </div>
                             <div className="flex flex-col text-left">
@@ -95,7 +95,7 @@ const ContactForm = () => {
                                 <textarea
                                     name="message"
                                     placeholder="Please feel free to let me know anything you want!"
-                                    className="border text-sm p-3 bg-transparent placeholder-p4/20 border-black/[0.1] dark:border-white/[0.2] focus:outline-none"
+                                    className="dark:text-white-100 font-medium border text-sm p-3 bg-transparent placeholder-p4/20 border-black/[0.1] dark:border-white/[0.2] focus:outline-none"
                                     rows="4"
                                 />
                             </div>
