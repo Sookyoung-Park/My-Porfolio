@@ -38,7 +38,7 @@ export const navItems = [
     },
   ];
   
-  export const projects = [
+  export const featuredProjects = [
     {
       id: 1,
       title: "MeU",
@@ -46,6 +46,7 @@ export const navItems = [
       img: "/projects/meu/meu-mockup.png",
       iconLists: ["/figma.svg", "/re.svg", "/mogodb.svg" ],
       link: "https://github.com/adrianhajdin?tab=repositories",
+      badge: ["UIUX Design", "FullStack"],
     },
     {
       id: 2,
@@ -54,6 +55,7 @@ export const navItems = [
       img: "/projects/plateus/plateus-mockup.png",
       iconLists: ["/figma.svg"],
       link: "https://github.com/adrianhajdin/zoom-clone",
+      badge: ["UIUX Design"],
     },
     {
       id: 3,
@@ -62,6 +64,7 @@ export const navItems = [
       img: "/projects/name-space/name-space-mockup.gif",
       iconLists: ["/firestore.svg","p5.svg"],
       link: "https://github.com/adrianhajdin/ai_saas_app",
+      badge: ["Media Art", "FrontEnd"],
     },
     {
       id: 4,
@@ -70,6 +73,7 @@ export const navItems = [
       img: "/projects/apple-website/apple-website-mockup.png",
       iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
       link: "https://github.com/adrianhajdin/iphone",
+      badge: ["FullStack"],
     },
   ];
   
@@ -220,3 +224,5 @@ export const navItems = [
       link: "https://dribbble.com/design_0n",
     },
   ];
+
+  

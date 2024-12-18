@@ -1,7 +1,6 @@
 "use client";
 import Link from "next/link"
 import {FaFolderOpen} from "react-icons/fa6";
-import { projects } from "@/data";
 import MagicButton from "./ui/MagicButton";
 import { FocusCards } from "./ui/FocusCards";
 
@@ -12,7 +11,7 @@ const FeatureProjects = () => {
         Featured Project
       </h1>
       <div className="flex flex-wrap items-center justify-center p-4 gap-16 mt-10 ">
-      <FocusCards data={projects} />
+      <FocusCards />
           <Link href="/project-page">
             <MagicButton
               title="View More Projects"

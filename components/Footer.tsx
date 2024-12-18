@@ -47,7 +47,7 @@ const Footer = () => {
 
         <div className="flex items-center md:gap-3 gap-6 max-md:mt-6 max-md:justify-center">
           {socialMedia.map((info) => (
-            <a href={info.link}>
+            <a href={info.link} key={info.id}>
               <div
                 key={info.id}
                 className="w-9 h-9 cursor-pointer flex justify-center items-center backdrop-filter backdrop-blur-lg saturate-180 bg-opacity-75  bg-black-100 dark:bg-black-200/70 rounded-lg border border-black-300/5"
