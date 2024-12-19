@@ -41,10 +41,12 @@ const config = {
   			blue: {
   				'100': '#E4ECFF',
 				'500': '#4299e1',
-				'700': '#1051c2',
+				'700': '#4662db',
   			},
 			purple:{
 				'200': '#5e1b87',
+				// badge color
+				'500': '#9b5cbf',
 				DEFAULT: '#CBACF9',
 			},
   			// purple: '#CBACF9',

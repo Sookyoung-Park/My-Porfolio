@@ -3,6 +3,10 @@ import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import MagicButton from "./ui/MagicButton";
 import { IoIosSend } from "react-icons/io";
+import { useToast } from '@/hooks/use-toast';
+import { Button } from "@/components/ui/button"
+import { ToastAction } from "@/components/ui/toast"
+
 
 const ContactForm = () => {
     const form = useRef<HTMLFormElement | null>(null);
@@ -54,6 +58,7 @@ const ContactForm = () => {
                                         name="firstName"
                                         placeholder="First Name"
                                         className="dark:text-white-100 font-medium border text-sm p-3 bg-transparent placeholder-p4/20 border-black/[0.1] dark:border-white/[0.2] focus:outline-none"
+                                        required
                                     />
                                 </div>
                                 <div className="flex flex-col w-full md:w-1/2 text-left">
@@ -63,6 +68,7 @@ const ContactForm = () => {
                                         name="lastName"
                                         placeholder="Last Name"
                                         className="dark:text-white-100 font-medium border text-sm p-3 bg-transparent placeholder-p4/20 border-black/[0.1] dark:border-white/[0.2] focus:outline-none"
+                                        required
                                     />
                                 </div>
                             </div>
@@ -74,6 +80,7 @@ const ContactForm = () => {
                                     name="user_email"
                                     placeholder="Email"
                                     className="dark:text-white-100 font-medium border text-sm p-3 bg-transparent placeholder-p4/20 border-black/[0.1] dark:border-white/[0.2] focus:outline-none"
+                                    required
                                 />
                             </div>
                             <div className="flex flex-col text-left">
@@ -83,12 +90,13 @@ const ContactForm = () => {
                                     placeholder="Please feel free to let me know anything you want!"
                                     className="dark:text-white-100 font-medium border text-sm p-3 bg-transparent placeholder-p4/20 border-black/[0.1] dark:border-white/[0.2] focus:outline-none"
                                     rows={4}
+                                    required
                                 />
                             </div>
                             
                             <div className="mt-5 relative">
                                 <MagicButton
-                                    title={submitted ? "Messege is sent!" : "Send Messege"}
+                                    title={submitted ? "Messege has sent!" : "Send Messege"}
                                     icon={<IoIosSend />}
                                     position="left"
                                     handleClick={handleSubmit}

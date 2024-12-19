@@ -45,7 +45,7 @@ export const BentoGridItem = ({
   const techStackRight = ["HTML", "CSS"];
 
   const lightModeStyle = {
-    background: "rgb(247,247,247)",
+    background: "rgb(250, 250, 250)",
     backgroundColor: "linear-gradient(90deg, rgba(240,240,240,1) 0%, rgba(220,220,220,1) 100%)",
   };
 
@@ -71,7 +71,10 @@ export const BentoGridItem = ({
         </div>
         {id === 1 && (
           <BackgroundGradientAnimation>
-            <div className="absolute z-50 inset-0 flex items-center justify-center text-white font-bold px-4 pointer-events-none text-3xl text-center md:text-4xl lg:text-7xl"></div>
+            <Link href="/about">
+            <div className="absolute z-50 inset-0 flex items-center justify-center text-white font-bold px-4 cursor-pointer text-3xl text-center md:text-4xl lg:text-7xl"/>
+            </Link>
+            
           </BackgroundGradientAnimation>
         )}
 

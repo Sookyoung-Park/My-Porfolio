@@ -43,8 +43,8 @@ export const FocusCards = () => {
               {badge.map((b, index) => {
                 // Determine badge color
                 const badgeColor = (() => {
-                  if (b === "UIUX Design") return "bg-purple-600 text-white";
-                  if (b === "FullStack" || b === "FrontEnd") return "bg-blue-500 text-white";
+                  if (b === "UIUX Design") return "bg-purple-500 text-white";
+                  if (b === "FullStack" || b === "FrontEnd") return "bg-blue-700 text-white";
                   return "bg-gray-700 text-white";
                 })();
 

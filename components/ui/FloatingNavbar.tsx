@@ -11,6 +11,7 @@ import Link from "next/link";
 import { ModeToggle } from "./ModeToggle";
 import { House, Archive, User } from 'lucide-react';
 import { Button } from "@/components/ui/button";
+import { useRouter } from "next/router";
 
 
 export const FloatingNavbar = ({
@@ -85,7 +86,8 @@ export const FloatingNavbar = ({
                   <House
                     className="h-[1.2rem] w-[1.2rem] hover:scale-110 transition-transform duration-200 cursor-pointer"
                     // style={{ color: "black" }}
-                    style={{ color: selected === "Home" ? "#4299e1" : "Black" }}
+                    style={{}}
+                    // style={{ color: selected === "Home" ? "#4299e1" : "Black" }}
                   />
                 <span className="sr-only">Toggle theme</span>
               </Button>
