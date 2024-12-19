@@ -72,7 +72,7 @@ export const AllFocusCards = () => {
         >
           All Projects
         </button>
-        {["UIUX Design", "Development Project", "Fun!"].map((badge) => (
+        {["UIUX Design","Development Project", "Fun!"].map((badge) => (
           <button
             key={badge}
             className="px-4 py-2 rounded-md border border-neutral-300/40 text-neutral-500 text-sm hover:-translate-y-1 transform transition duration-200 hover:shadow-md"
