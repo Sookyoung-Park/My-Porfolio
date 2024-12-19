@@ -2,50 +2,36 @@
 import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import MagicButton from "./ui/MagicButton";
-import animationData from "@/data/confetti.json";
 import { IoIosSend } from "react-icons/io";
 
 const ContactForm = () => {
-    const form = useRef('');
-    const [copied, setCopied] = useState(false);
-    // const [submit, setSubmit] = useState(false);
+    const form = useRef<HTMLFormElement | null>(null);
+    const [submitted, setSubmitted] = useState(false);
     const [successMessage, setSuccessMessage] = useState('');
 
-    //   const defaultOptions = {
-    //     loop: copied,
-    //     autoplay: copied,
-    //     animationData: animationData,
-    //     rendererSettings: {
-    //     preserveAspectRatio: "xMidYMid slice",
-    //     },
-    // };
-
-    //   const handleCopy = () => {
-    //     const text = "parksk971031@gmail.com";
-    //     navigator.clipboard.writeText(text);
-    //     setCopied(true);
-    // };
-
     const handleSubmit = () => {
+        setSubmitted(true)
         console.log('submitted')
     }
 
     const sendEmail = (e:any) => {
         e.preventDefault();
-        emailjs
-        .sendForm('service_59l5n5q', 'Contact_form', form.current, {
-            publicKey: 'MyrS07nn40pvSfhg5',
-        })
-        .then(
-            () => {
-                console.log('SUCCESS!');
-                setSuccessMessage("Thank you for reaching out! We'll be in touch shortly.");
-                form.current.reset(); // Optional: reset the form after submission
-            },
-            (error) => {
-                console.log('FAILED...', error.text);
-            },
-        );
+        if (form.current) {
+            // Use form.current as HTMLFormElement
+            emailjs
+              .sendForm('service_59l5n5q', 'Contact_form', form.current, 'MyrS07nn40pvSfhg5')
+              .then(
+                (result) => {
+                  console.log(result.text);
+                  form.current?.reset(); // Reset the form
+                },
+                (error) => {
+                  console.error(error.text);
+                }
+              );
+          } else {
+            console.error("Form reference is null.");
+          }
     };
 
     return (
@@ -96,20 +82,19 @@ const ContactForm = () => {
                                     name="message"
                                     placeholder="Please feel free to let me know anything you want!"
                                     className="dark:text-white-100 font-medium border text-sm p-3 bg-transparent placeholder-p4/20 border-black/[0.1] dark:border-white/[0.2] focus:outline-none"
-                                    rows="4"
+                                    rows={4}
                                 />
                             </div>
                             
                             <div className="mt-5 relative">
                                 <MagicButton
-                                    title={copied ? "Messege is sent!" : "Send Messege"}
+                                    title={submitted ? "Messege is sent!" : "Send Messege"}
                                     icon={<IoIosSend />}
                                     position="left"
                                     handleClick={handleSubmit}
                                 />
                                 <button type="submit" onClick={() => handleSubmit()}/>
                                 </div>
-
                         </form>
                     </div>
                 </div>
