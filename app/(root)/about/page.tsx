@@ -4,16 +4,23 @@ import { navItems } from "@/data";
 import MagicButton from "@/components/ui/MagicButton";
 import Footer from "@/components/Footer";
 import { IoIosSend } from "react-icons/io";
+import Image from "next/image";
 
 const About = () => {
   return (
     <main className="relative bg-white dark:bg-black-100 flex justify-center items-center flex-col overflow-hidden mx-auto sm:px-10 px-5">
       <div className="flex flex-row items-center justify-center text-center mt-20">
-        <img
+        <Image 
+          src="/projects/meu/meu-mockup.png" 
+          alt="Profile Picture"
+          width={300}
+          height={300}
+          className="rounded-full object-cover mb-4"/>
+        {/* <img
           src="/projects/meu/meu-mockup.png" 
           alt="Profile Picture"
           className="w-60 h-60 rounded-full object-cover mb-4"
-        />
+        /> */}
         <div className="flex-col text-left ml-16">
           <h1 className="text-5xl my-6 font-bold text-neutral-800 dark:text-white">Sookyoung Park</h1>
           <p className="text-base text-neutral-600 dark:text-neutral-400 max-w-2xl mx-auto mt-4">

@@ -9,6 +9,9 @@ import {
 import { cn } from "@/utils/cn";
 import Link from "next/link";
 import { ModeToggle } from "./ModeToggle";
+import { House, Archive, User } from 'lucide-react';
+import { Button } from "@/components/ui/button";
+
 
 export const FloatingNavbar = ({
   navItems,
@@ -23,6 +26,7 @@ export const FloatingNavbar = ({
 }) => {
   const { scrollYProgress } = useScroll();
   const [visible, setVisible] = useState(false);
+  const [selected, setSelected] = useState("Home");
 
   useMotionValueEvent(scrollYProgress, "change", (current) => {
     // Check if current is not undefined and is a number
@@ -69,8 +73,51 @@ export const FloatingNavbar = ({
             className={cn(
               "relative dark:text-neutral-50 items-center flex space-x-1 text-neutral-600 dark:hover:text-neutral-300 hover:text-neutral-500 px-5 py-2"
             )}
+            onClick={() => setSelected(navItem.name)}
           >
-            <span className="block sm:hidden">{navItem.icon}</span>
+            <span className="block sm:hidden">
+              {navItem.name === "Home" && (
+                <Button
+                variant="outline"
+                size="icon"
+                className="border-white/[0.2] rounded-[100px] cursor-pointer hover:scale-110 transition-transform duration-200 "
+              >
+                  <House
+                    className="h-[1.2rem] w-[1.2rem] hover:scale-110 transition-transform duration-200 cursor-pointer"
+                    // style={{ color: "black" }}
+                    style={{ color: selected === "Home" ? "#4299e1" : "Black" }}
+                  />
+                <span className="sr-only">Toggle theme</span>
+              </Button>
+              )}
+              {navItem.name === "Projects" && (
+                <Button
+                variant="outline"
+                size="icon"
+                className="border-white/[0.2] rounded-[100px] cursor-pointer  hover:scale-110 transition-transform duration-200 "
+              >
+                  <Archive
+                    className="h-[1.2rem] w-[1.2rem] hover:scale-110 transition-transform duration-200 cursor-pointer"
+                    // style={{ color: "black" }}
+                    style={{ color: selected === "Projects" ? "#4299e1" : "Black" }}
+                  />
+              </Button>
+              )}
+              {navItem.name === "About" && (
+                <Button
+                variant="outline"
+                size="icon"
+                className="border-white/[0.2] rounded-[100px] cursor-pointer  hover:scale-110 transition-transform duration-200 "
+              >
+                  <User
+                    className="h-[1.2rem] w-[1.2rem] hover:scale-110 transition-transform duration-200 cursor-pointer"
+                    // style={{ color: "Black" }}
+                    style={{ color: selected === "About" ? "#4299e1" : "Black" }}
+                  />
+              </Button>
+              )}
+
+              </span>
             <span className="hidden sm:block text-sm">{navItem.name}</span>
           </Link>
         ))}

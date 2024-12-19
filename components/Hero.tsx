@@ -5,8 +5,6 @@ import { motion } from "framer-motion";
 import { AuroraBackground } from "./ui/AuroraBackground";
 import { Spotlight } from "./ui/Spotlight";
 import { FlipWords } from "./ui/FlipWords";
-// import MagicButton from "./ui/MagicButton";
-// import { FaLocationArrow } from "react-icons/fa6";
 
 const Hero = () => {
   const { theme, setTheme } = useTheme();

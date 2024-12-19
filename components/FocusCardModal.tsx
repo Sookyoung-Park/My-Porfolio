@@ -1,5 +1,4 @@
 "use client";
-import { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { IconX } from "@tabler/icons-react";
 import Image from "next/image";
@@ -33,27 +32,27 @@ export const FocusCardModal = ({ card, isOpen, onClose }: any) => {
                 <Image
                     src="/projects/meu/meu-mockup.png" width={1000} height={100} alt="test" />
                 welrjaeofij owiejfl kewjfo iweajofijwealkfj laewkfj owiejfoiwj oeifjlwkaejf
-            >welrjaeofij owiejfl kewjfo iweajofijwealkfj laewkfj owiejfoiwj oeifjlwkaejf
-            >welrjaeofij owiejfl kewjfo iweajofijwealkfj laewkfj owiejfoiwj oeifjlwkaejf
-            >welrjaeofij owiejfl kewjfo iweajofijwealkfj laewkfj owiejfoiwj oeifjlwkaejf</div>
-            >welrjaeofij owiejfl kewjfo iweajofijwealkfj laewkfj owiejfoiwj oeifjlwkaejf
-            >welrjaeofij owiejfl kewjfo iweajofijwealkfj laewkfj owiejfoiwj oeifjlwkaejf
-            >welrjaeofij owiejfl kewjfo iweajofijwealkfj laewkfj owiejfoiwj oeifjlwkaejf
+            welrjaeofij owiejfl kewjfo iweajofijwealkfj laewkfj owiejfoiwj oeifjlwkaejf
+            welrjaeofij owiejfl kewjfo iweajofijwealkfj laewkfj owiejfoiwj oeifjlwkaejf
+            welrjaeofij owiejfl kewjfo iweajofijwealkfj laewkfj owiejfoiwj oeifjlwkaejf</div>
+            welrjaeofij owiejfl kewjfo iweajofijwealkfj laewkfj owiejfoiwj oeifjlwkaejf
+            welrjaeofij owiejfl kewjfo iweajofijwealkfj laewkfj owiejfoiwj oeifjlwkaejf
+            welrjaeofij owiejfl kewjfo iweajofijwealkfj laewkfj owiejfoiwj oeifjlwkaejf
 
-            >welrjaeofij owiejfl kewjfo iweajofijwealkfj laewkfj owiejfoiwj oeifjlwkaejf
-            >welrjaeofij owiejfl kewjfo iweajofijwealkfj laewkfj owiejfoiwj oeifjlwkaejf
+            welrjaeofij owiejfl kewjfo iweajofijwealkfj laewkfj owiejfoiwj oeifjlwkaejf
+            welrjaeofij owiejfl kewjfo iweajofijwealkfj laewkfj owiejfoiwj oeifjlwkaejf
 
-            >welrjaeofij owiejfl kewjfo iweajofijwealkfj laewkfj owiejfoiwj oeifjlwkaejf
-            >welrjaeofij owiejfl kewjfo iweajofijwealkfj laewkfj owiejfoiwj oeifjlwkaejf
-            >welrjaeofij owiejfl kewjfo iweajofijwealkfj laewkfj owiejfoiwj oeifjlwkaejf
-            >welrjaeofij owiejfl kewjfo iweajofijwealkfj laewkfj owiejfoiwj oeifjlwkaejf
-            >welrjaeofij owiejfl kewjfo iweajofijwealkfj laewkfj owiejfoiwj oeifjlwkaejf
+            welrjaeofij owiejfl kewjfo iweajofijwealkfj laewkfj owiejfoiwj oeifjlwkaejf
+            welrjaeofij owiejfl kewjfo iweajofijwealkfj laewkfj owiejfoiwj oeifjlwkaejf
+            welrjaeofij owiejfl kewjfo iweajofijwealkfj laewkfj owiejfoiwj oeifjlwkaejf
+            welrjaeofij owiejfl kewjfo iweajofijwealkfj laewkfj owiejfoiwj oeifjlwkaejf
+            welrjaeofij owiejfl kewjfo iweajofijwealkfj laewkfj owiejfoiwj oeifjlwkaejf
 
-            >welrjaeofij owiejfl kewjfo iweajofijwealkfj laewkfj owiejfoiwj oeifjlwkaejf
-            >welrjaeofij owiejfl kewjfo iweajofijwealkfj laewkfj owiejfoiwj oeifjlwkaejf
-            >welrjaeofij owiejfl kewjfo iweajofijwealkfj laewkfj owiejfoiwj oeifjlwkaejf
-            >welrjaeofij owiejfl kewjfo iweajofijwealkfj laewkfj owiejfoiwj oeifjlwkaejf
-            >welrjaeofij owiejfl kewjfo iweajofijwealkfj laewkfj owiejfoiwj oeifjlwkaejf
+            welrjaeofij owiejfl kewjfo iweajofijwealkfj laewkfj owiejfoiwj oeifjlwkaejf
+            welrjaeofij owiejfl kewjfo iweajofijwealkfj laewkfj owiejfoiwj oeifjlwkaejf
+            welrjaeofij owiejfl kewjfo iweajofijwealkfj laewkfj owiejfoiwj oeifjlwkaejf
+            welrjaeofij owiejfl kewjfo iweajofijwealkfj laewkfj owiejfoiwj oeifjlwkaejf
+            welrjaeofij owiejfl kewjfo iweajofijwealkfj laewkfj owiejfoiwj oeifjlwkaejf
           </motion.div>
         </div>
       )}
