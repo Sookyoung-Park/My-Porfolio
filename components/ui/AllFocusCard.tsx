@@ -8,6 +8,7 @@ export const AllFocusCards = () => {
   const [modalData, setModalData] = useState(null); // To hold card data for modal
   const [selectedBadges, setSelectedBadges] = useState<string[]>([]); // To store multiple selected badges
   const [currentPage, setCurrentPage] = useState(1); // To handle pagination
+  const [activeButton, setActiveButton] = useState("All Projects"); // Track active button
 
   const projectsPerPage = 6;
 
@@ -41,15 +42,16 @@ export const AllFocusCards = () => {
   };
 
   const handleBadgeClick = (category: string) => {
+    setActiveButton(category); // Update active button
     if (category === "UIUX Design") {
       setSelectedBadges(["UIUX Design"]); // Set only UIUX Design
     } 
     else if (category === "Development Project") {
       setSelectedBadges(["FullStack", "FrontEnd"]);
     } 
-    else if (category === "All Projects"){
+    else if (category === "All Projects") {
       setSelectedBadges([]);
-    }
+    } 
     else {
       setSelectedBadges(["AI", "Music", "VR Design", "AR Design", "Game Design"]);
     }
@@ -67,15 +69,23 @@ export const AllFocusCards = () => {
     <div className="space-y-8">
       <div className="flex space-x-4 mb-20 items-center justify-center">
         <button
-          className="px-4 py-2 rounded-md border border-neutral-300/40 text-neutral-500 text-sm hover:-translate-y-1 transform transition duration-200 hover:shadow-md"
+          className={`px-4 py-2 rounded-md border border-neutral-300/40 text-sm transform transition duration-200 ${
+            activeButton === "All Projects"
+              ? "bg-purple-500 text-white"
+              : "text-neutral-500 hover:-translate-y-1 hover:shadow-md"
+          }`}
           onClick={() => handleBadgeClick("All Projects")}
         >
           All Projects
         </button>
-        {["UIUX Design","Development Project", "Fun!"].map((badge) => (
+        {["UIUX Design", "Development Project", "Fun!"].map((badge) => (
           <button
             key={badge}
-            className="px-4 py-2 rounded-md border border-neutral-300/40 text-neutral-500 text-sm hover:-translate-y-1 transform transition duration-200 hover:shadow-md"
+            className={`px-4 py-2 rounded-md border border-neutral-300/40 text-sm transform transition duration-200 ${
+              activeButton === badge
+                ? "text-purple-500 border-purple-500"
+                : "text-neutral-500 hover:-translate-y-1 hover:shadow-md"
+            }`}
             onClick={() => handleBadgeClick(badge)}
           >
             {badge}
@@ -125,14 +135,13 @@ export const AllFocusCards = () => {
           </div>
         ))}
       </div>
+
       {/* Pagination Controls */}
       <div className="flex justify-center space-x-4 mt-8">
         {currentPage > 1 && (
           <button
             onClick={() => handlePageChange(currentPage - 1)}
-            className=
-            // "px-3 py-2 bg-white-100/0.5 text-black-200 border border-[text-black-200/0.7] text-[12px] rounded-md"
-            "mt-12 px-4 py-2 rounded-md border border-neutral-300/40 text-neutral-500 text-sm hover:-translate-y-1 transform transition duration-200 hover:shadow-md"
+            className="mt-12 px-4 py-2 rounded-md border border-neutral-300/40 text-neutral-500 text-sm hover:-translate-y-1 transform transition duration-200 hover:shadow-md"
           >
             Previous
           </button>
@@ -140,9 +149,7 @@ export const AllFocusCards = () => {
         {currentPage < totalPages && (
           <button
             onClick={() => handlePageChange(currentPage + 1)}
-            className=
-            // "px-4 py-2 bg-gray-700 text-white rounded-md"
-            "mt-12 px-4 py-2 rounded-md border border-neutral-300/40 text-neutral-500 text-sm hover:-translate-y-1 transform transition duration-200 hover:shadow-md"
+            className="mt-12 px-4 py-2 rounded-md border border-neutral-300/40 text-neutral-500 text-sm hover:-translate-y-1 transform transition duration-200 hover:shadow-md"
           >
             Next
           </button>
