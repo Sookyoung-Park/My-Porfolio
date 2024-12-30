@@ -1,5 +1,5 @@
 "use client";
-import React, { JSX, useState } from "react";
+import React, { JSX, useEffect, useState } from "react";
 import {
   motion,
   AnimatePresence,
@@ -8,11 +8,9 @@ import {
 } from "framer-motion";
 import { cn } from "@/utils/cn";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 import { ModeToggle } from "./ModeToggle";
-import { House, Archive, User } from 'lucide-react';
-import { Button } from "@/components/ui/button";
-import { useRouter } from "next/router";
-
+import { House, Archive, User } from "lucide-react";
 
 export const FloatingNavbar = ({
   navItems,
@@ -26,24 +24,26 @@ export const FloatingNavbar = ({
   className?: string;
 }) => {
   const { scrollYProgress } = useScroll();
+  const router = useRouter();
   const [visible, setVisible] = useState(false);
   const [selected, setSelected] = useState("Home");
 
+  // 라우터 경로에 따라 상태 업데이트
+  useEffect(() => {
+    const currentPath = window.location.pathname;
+    const currentItem = navItems.find((item) => item.link === currentPath);
+    if (currentItem) {
+      setSelected(currentItem.name);
+    }
+  }, [navItems]);
+
   useMotionValueEvent(scrollYProgress, "change", (current) => {
-    // Check if current is not undefined and is a number
     if (typeof current === "number") {
       let direction = current! - scrollYProgress.getPrevious()!;
-
       if (scrollYProgress.get() < 0.05) {
         setVisible(false);
-      } 
-      else {
-        if (direction < 0) {
-          setVisible(true);
-        } 
-        else {
-          setVisible(false);
-        }
+      } else {
+        setVisible(direction < 0);
       }
     }
   });
@@ -63,64 +63,52 @@ export const FloatingNavbar = ({
           duration: 0.2,
         }}
         className={cn(
-          "flex max-w-fit  fixed top-10 inset-x-0 mx-auto border border-transparent dark:border-white/[0.2] rounded-full dark:bg-black bg-white shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)] z-[5000] pr-8 pl-8 py-2  items-center justify-center space-x-4",
+          "flex max-w-fit fixed top-10 inset-x-0 mx-auto border border-transparent dark:border-white/[0.2] rounded-full dark:bg-black bg-white shadow-md z-[5000] pr-8 pl-8 py-2 items-center justify-center space-x-4",
           className
         )}
       >
-        {navItems.map((navItem: any, idx: number) => (
+        {navItems.map((navItem, idx) => (
           <Link
-            key={`link=${idx}`}
+            key={`link-${idx}`}
             href={navItem.link}
             className={cn(
-              "relative dark:text-neutral-50 items-center flex space-x-1 text-neutral-600 dark:hover:text-neutral-300 hover:text-neutral-500 px-5 py-2"
+              "relative flex items-center space-x-1 px-5 py-2 text-sm rounded-full",
+              selected === navItem.name
+                ? "dark:text-purple-500 text-blue-500"
+                : "dark:text-neutral-50 text-neutral-600 hover:text-[15px] transition-all"
             )}
-            onClick={() => setSelected(navItem.name)}
+            onClick={() => {
+              setSelected(navItem.name); // 클릭한 메뉴를 선택
+              router.push(navItem.link); // 라우터 이동
+            }}
           >
             <span className="block sm:hidden">
               {navItem.name === "Home" && (
-                <Button
-                variant="outline"
-                size="icon"
-                className="border-white/[0.2] rounded-[100px] cursor-pointer hover:scale-110 transition-transform duration-200 "
-              >
-                  <House
-                    className="h-[1.2rem] w-[1.2rem] hover:scale-110 transition-transform duration-200 cursor-pointer"
-                    // style={{ color: "black" }}
-                    style={{}}
-                    // style={{ color: selected === "Home" ? "#4299e1" : "Black" }}
-                  />
-                <span className="sr-only">Toggle theme</span>
-              </Button>
+                <House
+                  className="h-5 w-5"
+                  style={{
+                    color: selected === "Home" ? "#6B46C1" : "inherit",
+                  }}
+                />
               )}
               {navItem.name === "Projects" && (
-                <Button
-                variant="outline"
-                size="icon"
-                className="border-white/[0.2] rounded-[100px] cursor-pointer  hover:scale-110 transition-transform duration-200 "
-              >
-                  <Archive
-                    className="h-[1.2rem] w-[1.2rem] hover:scale-110 transition-transform duration-200 cursor-pointer"
-                    // style={{ color: "black" }}
-                    style={{ color: selected === "Projects" ? "#4299e1" : "Black" }}
-                  />
-              </Button>
+                <Archive
+                  className="h-5 w-5"
+                  style={{
+                    color: selected === "Projects" ? "#6B46C1" : "inherit",
+                  }}
+                />
               )}
               {navItem.name === "About" && (
-                <Button
-                variant="outline"
-                size="icon"
-                className="border-white/[0.2] rounded-[100px] cursor-pointer  hover:scale-110 transition-transform duration-200 "
-              >
-                  <User
-                    className="h-[1.2rem] w-[1.2rem] hover:scale-110 transition-transform duration-200 cursor-pointer"
-                    // style={{ color: "Black" }}
-                    style={{ color: selected === "About" ? "#4299e1" : "Black" }}
-                  />
-              </Button>
+                <User
+                  className="h-5 w-5"
+                  style={{
+                    color: selected === "About" ? "#6B46C1" : "inherit",
+                  }}
+                />
               )}
-
-              </span>
-            <span className="hidden sm:block text-sm">{navItem.name}</span>
+            </span>
+            <span className="hidden sm:block">{navItem.name}</span>
           </Link>
         ))}
         <ModeToggle />

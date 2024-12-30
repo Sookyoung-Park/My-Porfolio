@@ -29,7 +29,7 @@ const MagicButton = ({
           <span
             className={`inline-flex h-full w-full cursor-pointer items-center justify-center rounded-lg
               bg-slate-950 px-7 text-sm font-medium text-white backdrop-blur-3xl gap-2 
-              hover:bg-gradient-to-r hover:from-[#2175bf] hover:to-[#7b2ba5] hover:text-white 
+              hover:bg-gradient-to-r hover:from-[#2175bf] hover:to-[#8730b5] hover:text-white 
               transition-all ${otherClasses}`}
           >
             {position === "left" && icon}
@@ -46,7 +46,7 @@ const MagicButton = ({
           <span
             className={`inline-flex h-full w-full cursor-pointer items-center justify-center rounded-lg 
             bg-white px-7 text-sm font-medium text-black-200 backdrop-blur-3xl gap-2
-            hover:bg-gradient-to-r hover:from-[#E2CBFF] hover:to-[#393BB2] hover:text-white
+            hover:bg-gradient-to-r hover:from-[#3a5adc] hover:to-[#393BB2] hover:text-white
             transition-all ${otherClasses}`}
           >
             {position === "left" && icon}
