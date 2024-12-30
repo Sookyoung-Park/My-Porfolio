@@ -71,7 +71,7 @@ export const AllFocusCards = () => {
         <button
           className={`px-4 py-2 rounded-md border border-neutral-300/40 text-sm transform transition duration-200 ${
             activeButton === "All Projects"
-              ? "bg-purple-500 text-white"
+              ? "dark:bg-purple-500 bg-blue-400 text-white"
               : "text-neutral-500 hover:-translate-y-1 hover:shadow-md"
           }`}
           onClick={() => handleBadgeClick("All Projects")}
@@ -83,7 +83,7 @@ export const AllFocusCards = () => {
             key={badge}
             className={`px-4 py-2 rounded-md border border-neutral-300/40 text-sm transform transition duration-200 ${
               activeButton === badge
-                ? "text-purple-500 border-purple-500"
+                ? "dark:text-purple-500 dark:border-purple-500 text-blue-400 border-blue-400"
                 : "text-neutral-500 hover:-translate-y-1 hover:shadow-md"
             }`}
             onClick={() => handleBadgeClick(badge)}

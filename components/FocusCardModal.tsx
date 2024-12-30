@@ -27,7 +27,7 @@ export const FocusCardModal = ({ card, isOpen, onClose }: any) => {
               <IconX className="h-6 w-6 text-neutral-100 dark:text-neutral-900" />
             </button>
             {/* <div className="py-10">{card.content}</div> */}
-            <div className="py-10">
+            <div className="py-10 dark:text-neutral-100">
               {/* placeholder */}
                 <Image
                     src="/projects/meu/meu-mockup.png" width={1000} height={100} alt="test" />

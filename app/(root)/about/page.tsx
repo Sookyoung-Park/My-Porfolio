@@ -3,24 +3,20 @@ import { FloatingNavbar } from "@/components/ui/FloatingNavbar";
 import { navItems } from "@/data";
 import MagicButton from "@/components/ui/MagicButton";
 import Footer from "@/components/Footer";
-import { IoIosSend } from "react-icons/io";
+import { IoIosDocument } from "react-icons/io";
 import Image from "next/image";
+import Link from "next/link";
 
 const About = () => {
   return (
     <main className="relative bg-white dark:bg-black-100 flex justify-center items-center flex-col overflow-hidden mx-auto sm:px-10 px-5">
-      <div className="flex flex-row items-center justify-center text-center mt-20">
+      {/* <div className="flex flex-row items-center justify-center text-center mt-20">
         <Image 
           src="/projects/meu/meu-mockup.png" 
           alt="Profile Picture"
           width={300}
           height={300}
           className="rounded-full object-cover mb-4"/>
-        {/* <img
-          src="/projects/meu/meu-mockup.png" 
-          alt="Profile Picture"
-          className="w-60 h-60 rounded-full object-cover mb-4"
-        /> */}
         <div className="flex-col text-left ml-16">
           <h1 className="text-5xl my-6 font-bold text-neutral-800 dark:text-white">Sookyoung Park</h1>
           <p className="text-base text-neutral-600 dark:text-neutral-400 max-w-2xl mx-auto mt-4">
@@ -28,16 +24,43 @@ const About = () => {
             My skills range from UI/UX design to implementation, and I have professional experience working in both areas.
           </p>
           <div className="mt-3 relative">
-            <MagicButton
-                title={"View Resume"}
-                icon={<IoIosSend />}
+            <Link href="https://drive.google.com/file/d/1lVQwMahnav8JBR2qBPeLqzbq9w3oedqo/view?usp=sharing">
+              <MagicButton
+                title="View Resume"
+                icon={<IoIosDocument />}
                 position="left"
-                // handleClick={handleSubmit}
-            />
-            {/* <button type="submit" onClick={() => handleSubmit()}/> */}
+              />
+            </Link>
           </div>
         </div>
-      </div>
+      </div> */}
+      <div className="flex flex-col md:flex-row items-center justify-center text-center mt-20 space-y-8 md:space-y-0 md:space-x-16">
+  <Image 
+    src="/profile.png" 
+    alt="Profile Picture"
+    width={300}
+    height={300}
+    className=" object-cover mb-4 md:mb-0 h-[320px]"
+  />
+  <div className="flex flex-col text-left">
+    <h1 className="text-3xl md:text-5xl font-bold text-neutral-800 dark:text-white">
+      Sookyoung Park
+    </h1>
+    <p className="text-sm md:text-base text-neutral-600 dark:text-neutral-400 max-w-xl mt-4">
+      I am a unique combination of a designer and developer with a background in design, art, and computer science.
+      My skills range from UI/UX design to implementation, and I have professional experience working in both areas.
+    </p>
+    <div className="mt-6">
+      <Link href="https://drive.google.com/file/d/1lVQwMahnav8JBR2qBPeLqzbq9w3oedqo/view?usp=sharing">
+        <MagicButton
+          title="View Resume"
+          icon={<IoIosDocument />}
+          position="left"
+        />
+      </Link>
+    </div>
+  </div>
+</div>
 
       {/* Education Section */}
       <div className="mt-36 w-full mx-auto px-5">
