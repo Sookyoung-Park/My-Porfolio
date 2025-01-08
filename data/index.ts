@@ -163,7 +163,8 @@ export const navItems = [
       link: "https://github.com/adrianhajdin/ai_saas_app",
       badge: ["Media Art", "FrontEnd"],
       isGithub: false,
-      overview:'NAME SPACE is an innovative generative media art project that showcases South Korea\'s extensive family tree, spanning generations up until the present day. Through the use of a specific algorithm, we were able to organize nearly 300 types of family tree data, resulting in a visually stunning data visualization. By simply entering your name into the input box, you can become an active participant in the "Name Space" galaxy. We hope to offer users a range of diverse experiences utilizing the p5.js library based on Javascript. The project installation gathers user information through Firefox and a database system, creating an immersive and interactive experience for all.'
+      overview:'NAME SPACE is an innovative generative media art project that showcases South Korea\'s extensive family tree, spanning generations up until the present day. Through the use of a specific algorithm, we were able to organize nearly 300 types of family tree data, resulting in a visually stunning data visualization. By simply entering your name into the input box, you can become an active participant in the "Name Space" galaxy. We hope to offer users a range of diverse experiences utilizing the p5.js library based on Javascript. The project installation gathers user information through Firefox and a database system, creating an immersive and interactive experience for all.',
+      content: 'Namespace',
     },
     {
       id: 7,
