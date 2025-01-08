@@ -60,10 +60,7 @@ export const FocusCardModal = ({ card, isOpen, onClose }: any) => {
                 ) : (
                   <p className="text-md font-regular mt-10">No content available</p>
                 )}
-
               </div>
-
-
           </motion.div>
         </div>
       )}

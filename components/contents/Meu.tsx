@@ -3,8 +3,8 @@ import Image from "next/image";
 
 const Meu = () => {
   return (
-      <div>
-          <h3 className="text-2xl text-center font-semibold mt-24 leading-10">How might we enhance spontaneous interactions <br/>for long-distance couples?</h3>
+    <div>
+        <h3 className="text-2xl text-center font-semibold mt-24 leading-10">How might we enhance spontaneous interactions <br/>for long-distance couples?</h3>
     <div className="flex justify-center items-center">
       <Image 
         src="/projects/meu/meu-content-1.png" 

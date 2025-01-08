@@ -133,7 +133,8 @@ export const navItems = [
       link: "https://github.com/Sookyoung-Park/Saas-App-Landing-Page",
       badge: ["FrontEnd"],
       isGithub: true,
-      overview:''
+      overview:'',
+      content: '',
     },
     {
       id: 5,
@@ -147,7 +148,8 @@ export const navItems = [
       link: "https://github.com/adrianhajdin/zoom-clone",
       badge: ["UIUX Design"],
       isGithub: false,
-      overview:'This mobile application is designed for busy Dartmouth college students, who have unique dietary and nutritional needs that cannot be met by the college dining services. The platform has the potential to be expanded to include students at other colleges and universities in smaller cities.'
+      overview:'This mobile application is designed for busy Dartmouth college students, who have unique dietary and nutritional needs that cannot be met by the college dining services. The platform has the potential to be expanded to include students at other colleges and universities in smaller cities.',
+      content: 'Plateus',
     },
     {
       id: 6,
