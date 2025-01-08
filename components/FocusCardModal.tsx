@@ -4,6 +4,7 @@ import { IconX } from "@tabler/icons-react";
 import Image from "next/image";
 
 export const FocusCardModal = ({ card, isOpen, onClose }: any) => {
+  console.log('here: ',card)
   return (
     <AnimatePresence>
       {isOpen && (
@@ -30,29 +31,20 @@ export const FocusCardModal = ({ card, isOpen, onClose }: any) => {
             <div className="py-10 dark:text-neutral-100">
               {/* placeholder */}
                 <Image
-                    src="/projects/meu/meu-mockup.png" width={1000} height={100} alt="test" />
-                welrjaeofij owiejfl kewjfo iweajofijwealkfj laewkfj owiejfoiwj oeifjlwkaejf
-            welrjaeofij owiejfl kewjfo iweajofijwealkfj laewkfj owiejfoiwj oeifjlwkaejf
-            welrjaeofij owiejfl kewjfo iweajofijwealkfj laewkfj owiejfoiwj oeifjlwkaejf
-            welrjaeofij owiejfl kewjfo iweajofijwealkfj laewkfj owiejfoiwj oeifjlwkaejf</div>
-            welrjaeofij owiejfl kewjfo iweajofijwealkfj laewkfj owiejfoiwj oeifjlwkaejf
-            welrjaeofij owiejfl kewjfo iweajofijwealkfj laewkfj owiejfoiwj oeifjlwkaejf
-            welrjaeofij owiejfl kewjfo iweajofijwealkfj laewkfj owiejfoiwj oeifjlwkaejf
+                  src="/projects/meu/meu-mockup.png" width={1000} height={100} alt="test" 
+                />
+                <h2 className="text-4xl font-bold mt-10">{card?.title || "No Title"}</h2>
+                <h4 className="text-md font-medium mt-6"> {card?.type || "No project type"} </h4>
+                <h4 className="text-md font-medium mt-1"> Tool: {card?.tool ? card.tool.join(", ") : "No Tool"} </h4>
+                <h4 className="text-md font-medium mt-1 mb-14"> Timeline: {card?.timeline || "No timeline"} </h4>
 
-            welrjaeofij owiejfl kewjfo iweajofijwealkfj laewkfj owiejfoiwj oeifjlwkaejf
-            welrjaeofij owiejfl kewjfo iweajofijwealkfj laewkfj owiejfoiwj oeifjlwkaejf
+                <h4 className="text-md font-semibold mb-4"> Project Overview </h4>
+                <p className="text-md font-regular">{card?.overview || "No Title"}</p>
 
-            welrjaeofij owiejfl kewjfo iweajofijwealkfj laewkfj owiejfoiwj oeifjlwkaejf
-            welrjaeofij owiejfl kewjfo iweajofijwealkfj laewkfj owiejfoiwj oeifjlwkaejf
-            welrjaeofij owiejfl kewjfo iweajofijwealkfj laewkfj owiejfoiwj oeifjlwkaejf
-            welrjaeofij owiejfl kewjfo iweajofijwealkfj laewkfj owiejfoiwj oeifjlwkaejf
-            welrjaeofij owiejfl kewjfo iweajofijwealkfj laewkfj owiejfoiwj oeifjlwkaejf
+              </div>
+  
 
-            welrjaeofij owiejfl kewjfo iweajofijwealkfj laewkfj owiejfoiwj oeifjlwkaejf
-            welrjaeofij owiejfl kewjfo iweajofijwealkfj laewkfj owiejfoiwj oeifjlwkaejf
-            welrjaeofij owiejfl kewjfo iweajofijwealkfj laewkfj owiejfoiwj oeifjlwkaejf
-            welrjaeofij owiejfl kewjfo iweajofijwealkfj laewkfj owiejfoiwj oeifjlwkaejf
-            welrjaeofij owiejfl kewjfo iweajofijwealkfj laewkfj owiejfoiwj oeifjlwkaejf
+
           </motion.div>
         </div>
       )}

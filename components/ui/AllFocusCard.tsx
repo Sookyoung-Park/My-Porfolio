@@ -25,17 +25,28 @@ export const AllFocusCards = () => {
     currentPage * projectsPerPage
   );
 
-  const handleCardClick = (cardData) => {
-    const { isGithub, link, title, des, img } = cardData;
+  // const handleCardClick = (cardData) => {
+  //   const { isGithub, link, title, des, img } = cardData;
 
+  //   if (isGithub && link) {
+  //     // If isGithub is true and link exists, open the link
+  //     window.open(link, "_blank");
+  //   } else {
+  //     // Otherwise, open the modal
+  //     setModalData({ title, des, img });
+  //   }
+  // };
+
+  const handleCardClick = (cardData) => {
+    const { isGithub, link } = cardData;
+  
     if (isGithub && link) {
-      // If isGithub is true and link exists, open the link
       window.open(link, "_blank");
     } else {
-      // Otherwise, open the modal
-      setModalData({ title, des, img });
+      setModalData(cardData); // 모든 데이터 전달
     }
   };
+  
 
   const closeModal = () => {
     setModalData(null); // Close modal by resetting the data
@@ -95,10 +106,11 @@ export const AllFocusCards = () => {
 
       {/* Project Cards */}
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 w-full">
-        {paginatedProjects.map(({ id, title, des, img, badge, isGithub, link }) => (
+        {paginatedProjects.map(({ id, title, des, img, badge, isGithub, link, type, tool, timeline, overview }) => (
           <div
             key={id}
-            onClick={() => handleCardClick({ title, des, img, badge, isGithub, link })}
+            // onClick={() => handleCardClick({ title, des, img, badge, isGithub, link })}
+            onClick={() => handleCardClick({ title, des, img, badge, isGithub, link, type, tool, timeline, overview })}
             className="relative group h-[50vh] bg-gray-800 overflow-hidden shadow-lg hover:scale-105 transition-transform duration-300 cursor-pointer"
           >
             <Image
@@ -159,7 +171,12 @@ export const AllFocusCards = () => {
       {/* Modal Display */}
       {modalData && (
         <FocusCardModal
+          card={modalData}
           title={modalData.title}
+          type={modalData.type}
+          tool={modalData.tool}
+          timeline={modalData.timeline}
+          overview={modalData.overview}
           description={modalData.des}
           imageSrc={modalData.img}
           isOpen={!!modalData}
