@@ -116,7 +116,7 @@ export const navItems = [
       link: "https://github.com/adrianhajdin?tab=repositories",
       badge: ["UIUX Design", "FullStack"],
       isGithub: false,
-      overview:'An innovative digital solution to enhance the connections between partners navigating the challenges of long-distance relationships. My role encompassed a range of responsibilities, spanning from conducting UX research and crafting UI designs to executing front-end development using React-Native and Redux, as well as implementing back-end solutions with MongoDB.'
+      overview:'An innovative digital solution to enhance the connections between partners navigating the challenges of long-distance relationships. My role encompassed a range of responsibilities, spanning from conducting UX research and crafting UI designs to executing front-end development using React-Native and Redux, as well as implementing back-end solutions with MongoDB.',
     },
     {
       id: 4,

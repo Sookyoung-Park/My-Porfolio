@@ -31,7 +31,7 @@ export const FocusCardModal = ({ card, isOpen, onClose }: any) => {
             <div className="py-10 dark:text-neutral-100">
               {/* placeholder */}
                 <Image
-                  src="/projects/meu/meu-mockup.png" width={1000} height={100} alt="test" 
+                  src={card.img} width={1000} height={100} alt="test" 
                 />
                 <h2 className="text-4xl font-bold mt-10">{card?.title || "No Title"}</h2>
                 <h4 className="text-md font-medium mt-6"> {card?.type || "No project type"} </h4>
