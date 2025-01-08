@@ -1,10 +1,23 @@
-"use client";
+"use client"
 import { AnimatePresence, motion } from "framer-motion";
 import { IconX } from "@tabler/icons-react";
 import Image from "next/image";
+import { useState, useEffect } from "react";
 
 export const FocusCardModal = ({ card, isOpen, onClose }: any) => {
-  console.log('here: ',card)
+
+  console.log("hereL ",card)
+  const [ContentComponent, setContentComponent] = useState<React.ComponentType | null>(null);
+
+  useEffect(() => {
+    if (card?.content) {
+      import(`../components/contents/${card.content}.tsx`)
+        .then((module) => setContentComponent(() => module.default))
+        .catch(() => setContentComponent(() => null)); // 에러 처리
+    }
+
+  }, [card?.content]);
+
   return (
     <AnimatePresence>
       {isOpen && (
@@ -34,15 +47,21 @@ export const FocusCardModal = ({ card, isOpen, onClose }: any) => {
                   src={card.img} width={1000} height={100} alt="test" 
                 />
                 <h2 className="text-4xl font-bold mt-10">{card?.title || "No Title"}</h2>
-                <h4 className="text-md font-medium mt-6"> {card?.type || "No project type"} </h4>
-                <h4 className="text-md font-medium mt-1"> Tool: {card?.tool ? card.tool.join(", ") : "No Tool"} </h4>
-                <h4 className="text-md font-medium mt-1 mb-14"> Timeline: {card?.timeline || "No timeline"} </h4>
+                <h4 className="text-sm font-medium mt-6"> {card?.type || "No project type"} </h4>
+                <h4 className="text-sm font-medium mt-1"> Tool: {card?.tool ? card.tool.join(", ") : "No Tool"} </h4>
+                <h4 className="text-sm font-medium mt-1 mb-14"> Timeline: {card?.timeline || "No timeline"} </h4>
 
-                <h4 className="text-md font-semibold mb-4"> Project Overview </h4>
-                <p className="text-md font-regular">{card?.overview || "No Title"}</p>
+                <h4 className="text-lg font-semibold mb-4"> Project Overview </h4>
+                <p className="text-sm font-regular">{card?.overview || "No Title"}</p>
+
+                {/* from here */}
+                {ContentComponent ? (
+                  <ContentComponent />
+                ) : (
+                  <p className="text-md font-regular mt-10">No content available</p>
+                )}
 
               </div>
-  
 
 
           </motion.div>

@@ -83,7 +83,7 @@ export const AllFocusCards = () => {
           className={`px-4 py-2 rounded-md border border-neutral-300/40 text-sm transform transition duration-200 ${
             activeButton === "All Projects"
               ? "dark:bg-purple-500 bg-blue-400 text-white"
-              : "text-neutral-500 hover:-translate-y-1 hover:shadow-md"
+              : "text-white hover:-translate-y-1 hover:shadow-md"
           }`}
           onClick={() => handleBadgeClick("All Projects")}
         >
@@ -95,7 +95,7 @@ export const AllFocusCards = () => {
             className={`px-4 py-2 rounded-md border border-neutral-300/40 text-sm transform transition duration-200 ${
               activeButton === badge
                 ? "dark:text-purple-500 dark:border-purple-500 text-blue-400 border-blue-400"
-                : "text-neutral-500 hover:-translate-y-1 hover:shadow-md"
+                : "text-white hover:-translate-y-1 hover:shadow-md"
             }`}
             onClick={() => handleBadgeClick(badge)}
           >
@@ -106,11 +106,11 @@ export const AllFocusCards = () => {
 
       {/* Project Cards */}
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 w-full">
-        {paginatedProjects.map(({ id, title, des, img, badge, isGithub, link, type, tool, timeline, overview }) => (
+        {paginatedProjects.map(({ id, title, des, img, badge, isGithub, link, type, tool, timeline, overview, content}) => (
           <div
             key={id}
             // onClick={() => handleCardClick({ title, des, img, badge, isGithub, link })}
-            onClick={() => handleCardClick({ title, des, img, badge, isGithub, link, type, tool, timeline, overview })}
+            onClick={() => handleCardClick({ title, des, img, badge, isGithub, link, type, tool, timeline, overview, content })}
             className="relative group h-[50vh] bg-gray-800 overflow-hidden shadow-lg hover:scale-105 transition-transform duration-300 cursor-pointer"
           >
             <Image
@@ -177,6 +177,7 @@ export const AllFocusCards = () => {
           tool={modalData.tool}
           timeline={modalData.timeline}
           overview={modalData.overview}
+          content={modalData.content}
           description={modalData.des}
           imageSrc={modalData.img}
           isOpen={!!modalData}
