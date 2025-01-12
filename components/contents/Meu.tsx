@@ -192,6 +192,7 @@ const Meu = () => {
             controls 
             autoPlay 
             loop 
+            muted
             className="w-full max-w-[240px] rounded-lg shadow-lg mt-10"
           />
         </div>

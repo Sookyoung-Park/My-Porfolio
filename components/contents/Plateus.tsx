@@ -131,6 +131,7 @@ const Plateus = () => {
           controls 
           autoPlay 
           loop 
+          muted
           className="w-full max-w-[300px] rounded-lg shadow-lg mt-10"
         />
       </div>
