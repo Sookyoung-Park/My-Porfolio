@@ -238,7 +238,8 @@ export const navItems = [
     link: "https://github.com/Sookyoung-Park/tripadvisor-landingpage-redesign",
     badge: ["AR Design"],
     isGithub: false,
-    overview:'Our team has designed an augmented reality experience to pay tribute to the iconic pop artist Roy Lichtenstein. We drew inspiration from Lichtenstein\'s distinctive style and masterpieces to create an interactive and entertaining way for users to engage with his art. By incorporating gamification elements like buttons, we aimed to enhance the user\'s exploration of the augmented reality environment. Our objective is to offer audiences a unique and dynamic approach to appreciate the works of Roy Lichtenstein through augmented reality. I was in charge of all the design process.'
+    overview:'Our team has designed an augmented reality experience to pay tribute to the iconic pop artist Roy Lichtenstein. We drew inspiration from Lichtenstein\'s distinctive style and masterpieces to create an interactive and entertaining way for users to engage with his art. By incorporating gamification elements like buttons, we aimed to enhance the user\'s exploration of the augmented reality environment. Our objective is to offer audiences a unique and dynamic approach to appreciate the works of Roy Lichtenstein through augmented reality. I was in charge of all the design process.',
+    content: 'Roypark',
   },
   {
     id: 12,
