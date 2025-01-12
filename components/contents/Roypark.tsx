@@ -42,36 +42,32 @@ const Roypark = () => {
       <h3 className="text-lg font-semibold mb-4 mt-32">Hi-Fidelity</h3>
       <div className="flex flex-col justify-center items-center">
         <Image 
-          src="/projects/roy-park/roy-park-target.png" 
+          src="/projects/roy-park/roy-park-hifi-2.png" 
+          alt="roypark-content1"
+          width={600}
+          height={500}
+          className="mt-12 object-cover mb-4 md:mb-0 h-auto"
+        />
+        <Image 
+          src="/projects/roy-park/roy-park-hifi-1.png" 
           alt="roypark-content1"
           width={600}
           height={500}
           className="mt-12 object-cover mb-4 md:mb-0 h-auto"
         />
       </div>
+      <h3 className="text-lg font-semibold mb-4 mt-32">Prototype / Demo</h3>
+      <div className="flex flex-col justify-center items-center">
+      <video 
+          src="/projects/roy-park/roy-park.mp4" 
+          controls 
+          autoPlay 
+          loop 
+          muted
+          className="w-full max-w-[600px] rounded-lg shadow-lg mt-10"
+        />
+      </div>
       </ul> 
-      
-      <h3 className="text-2xl font-semibold mt-32 mb-8">UI Design</h3>
-      <h3 className="text-lg font-semibold mt-12 mb-4">Style Guide</h3>
-      <div className="flex flex-col justify-center items-center">
-        <Image 
-          src="/projects/dartmouth-itc/itc-styleguide.png" 
-          alt="meu-content1"
-          width={600}
-          height={500}
-          className="mt-12 object-cover mb-4 md:mb-0 h-auto"
-        />
-      </div>
-      <h3 className="text-lg font-semibold mt-24 mb-4">Grayscale</h3>
-      <div className="flex flex-col justify-center items-center">
-        <Image 
-          src="/projects/dartmouth-itc/itc-grayscale.png" 
-          alt="plateus-content1"
-          width={600}
-          height={500}
-          className="mt-12 object-cover mb-4 md:mb-0 h-auto"
-        />
-      </div>
     </div>
   )
 }
