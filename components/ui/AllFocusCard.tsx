@@ -25,18 +25,6 @@ export const AllFocusCards = () => {
     currentPage * projectsPerPage
   );
 
-  // const handleCardClick = (cardData) => {
-  //   const { isGithub, link, title, des, img } = cardData;
-
-  //   if (isGithub && link) {
-  //     // If isGithub is true and link exists, open the link
-  //     window.open(link, "_blank");
-  //   } else {
-  //     // Otherwise, open the modal
-  //     setModalData({ title, des, img });
-  //   }
-  // };
-
   const handleCardClick = (cardData) => {
     const { isGithub, link } = cardData;
   

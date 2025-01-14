@@ -44,7 +44,7 @@ const Footer = () => {
                   <Link href="/project-page">PROJECTS</Link>
                 </li>
                 <li>
-                  <Link href="/about">RESUME</Link>
+                  <Link href="https://drive.google.com/file/d/1lVQwMahnav8JBR2qBPeLqzbq9w3oedqo/view?usp=sharing">RESUME</Link>
                 </li>
               </ul>
           </div>

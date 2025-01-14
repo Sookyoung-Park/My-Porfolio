@@ -23,10 +23,10 @@ export const FocusCards = () => {
 
   return (
     <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 w-full">
-      {featuredProjects.map(({ id, title, des, img, badge, iconLists, isGithub, link }) => (
+      {featuredProjects.map(({ id, title, des, img, badge, isGithub, link, type, tool, timeline, overview, content }) => (
         <div
           key={id}
-          onClick={() => handleCardClick({ title, des, img, badge, isGithub, link })}
+          onClick={() => handleCardClick({ id, title, des, img, badge, isGithub, link, type, tool, timeline, overview, content })}
           className="relative group h-[50vh] bg-gray-800 overflow-hidden shadow-lg hover:scale-105 transition-transform duration-300 cursor-pointer"
         >
           <Image
@@ -63,9 +63,24 @@ export const FocusCards = () => {
         </div>
       ))}
       {/* Modal Display */}
-      {modalData && (
+      {/* {modalData && (
         <FocusCardModal
           title={modalData.title}
+          description={modalData.des}
+          imageSrc={modalData.img}
+          isOpen={!!modalData}
+          onClose={closeModal}
+        />
+      )} */}
+      {modalData && (
+        <FocusCardModal
+          card={modalData}
+          title={modalData.title}
+          type={modalData.type}
+          tool={modalData.tool}
+          timeline={modalData.timeline}
+          overview={modalData.overview}
+          content={modalData.content}
           description={modalData.des}
           imageSrc={modalData.img}
           isOpen={!!modalData}
