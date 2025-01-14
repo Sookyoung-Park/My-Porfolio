@@ -270,22 +270,22 @@ export const navItems = [
     overview:'Our objective for this project was to create an immersive and challenging survival game in Unity, inspired by the movie "Avatar". As the sole designer on the project, I was responsible for overseeing the entire design process, from concept development to final implementation. Working alongside a developer teammate, we collaborated to create a fully functional game that would provide players with an engaging and memorable gaming experience.',
     content: 'Bioluminescent',
   },
+  // {
+  //   id: 14,
+  //   title: "What2Eat",
+  //   type: "Personal Project",
+  //   tool: ['Figma'],
+  //   timeline:'4 weeks (December 2019)',
+  //   des: " An app service designed for foreign residents and exchange students living in Germany who may face language barriers while grocery shopping.",
+  //   img: "/projects/what2eat/what2eat-mockup.png",
+  //   iconLists: ["/figma.svg"],
+  //   link: "https://github.com/Sookyoung-Park/tripadvisor-landingpage-redesign",
+  //   badge: ["UIUX Design"],
+  //   isGithub: false,
+  //   overview:'WHAT2EAT is a valuable app service designed specifically for foreign residents and exchange students living in Germany who may face language barriers while grocery shopping. With this app, users can simply take a picture of any ingredient at a market, and the app will provide an instant translation of the name into their native language. Additionally, the app offers recipe suggestions based on the ingredient. Our group also wrote an academic paper on the subject.'
+  // },
   {
     id: 14,
-    title: "What2Eat",
-    type: "Personal Project",
-    tool: ['Figma'],
-    timeline:'4 weeks (December 2019)',
-    des: " An app service designed for foreign residents and exchange students living in Germany who may face language barriers while grocery shopping.",
-    img: "/projects/what2eat/what2eat-mockup.png",
-    iconLists: ["/figma.svg"],
-    link: "https://github.com/Sookyoung-Park/tripadvisor-landingpage-redesign",
-    badge: ["UIUX Design"],
-    isGithub: false,
-    overview:'WHAT2EAT is a valuable app service designed specifically for foreign residents and exchange students living in Germany who may face language barriers while grocery shopping. With this app, users can simply take a picture of any ingredient at a market, and the app will provide an instant translation of the name into their native language. Additionally, the app offers recipe suggestions based on the ingredient. Our group also wrote an academic paper on the subject.'
-  },
-  {
-    id: 15,
     title: "Greendot",
     type: "Personal Project",
     tool: ['Figma'],
@@ -296,10 +296,11 @@ export const navItems = [
     link: "https://github.com/Sookyoung-Park/tripadvisor-landingpage-redesign",
     badge: ["UIUX Design"],
     isGithub: false,
-    overview:'Greendot is a platform that connects upcycling companies with individuals through a user-friendly app design. This innovative solution addresses the issues of waste supply from upcycling companies, while also offering a way for individuals to earn extra income. The service is available in both Korean and English versions. For the Korean version, a High-Fidelity-Prototype has been created to showcase the app\'s full functionality and features.'
+    overview:'Greendot is a platform that connects upcycling companies with individuals through a user-friendly app design. This innovative solution addresses the issues of waste supply from upcycling companies, while also offering a way for individuals to earn extra income. The service is available in both Korean and English versions. For the Korean version, a High-Fidelity-Prototype has been created to showcase the app\'s full functionality and features.',
+    content:'Greendot'
   },
   {
-    id: 16,
+    id: 15,
     title: "Cougar's Mansion",
     type: "Group Project",
     tool: ['Maya', 'Photoshop', 'Unity'],
