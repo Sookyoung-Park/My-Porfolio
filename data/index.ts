@@ -267,7 +267,8 @@ export const navItems = [
     link: "https://github.com/Sookyoung-Park/tripadvisor-landingpage-redesign",
     badge: ["Game Design"],
     isGithub: false,
-    overview:'Our objective for this project was to create an immersive and challenging survival game in Unity, inspired by the movie "Avatar". As the sole designer on the project, I was responsible for overseeing the entire design process, from concept development to final implementation. Working alongside a developer teammate, we collaborated to create a fully functional game that would provide players with an engaging and memorable gaming experience.'
+    overview:'Our objective for this project was to create an immersive and challenging survival game in Unity, inspired by the movie "Avatar". As the sole designer on the project, I was responsible for overseeing the entire design process, from concept development to final implementation. Working alongside a developer teammate, we collaborated to create a fully functional game that would provide players with an engaging and memorable gaming experience.',
+    content: 'Bioluminescent',
   },
   {
     id: 14,
