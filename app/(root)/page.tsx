@@ -1,7 +1,6 @@
 'use client'
 import { FloatingNavbar } from "@/components/ui/FloatingNavbar";
 import { navItems } from "@/data";
-
 import Hero from "@/components/Hero";
 import Grid from "@/components/Grid";
 import FeatureProjects from "@/components/FeatureProjects";

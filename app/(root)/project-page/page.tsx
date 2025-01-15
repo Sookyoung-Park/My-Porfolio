@@ -1,5 +1,4 @@
 'use client'
-import React from 'react'
 import { FloatingNavbar } from "@/components/ui/FloatingNavbar";
 import { navItems } from "@/data";
 import Portfolio from '@/components/Portfolio';
