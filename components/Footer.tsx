@@ -40,10 +40,10 @@ const Footer = () => {
         <div className="flex items-center md:gap-3 gap-6  max-md:hidden">
         <div className="max-w-7xl w-full px-5">
               <ul className="text-neutral-600 dark:text-neutral-400 list-disc space-y-2 text-[14px]">
-                <li>
+                <li className="transition ease-in-out delay-150 hover:scale-110 hover:text-blue-500 dark:hover:text-purple-500">
                   <Link href="/project-page">PROJECTS</Link>
                 </li>
-                <li>
+                <li className="transition ease-in-out delay-150 hover:scale-110 hover:text-blue-500 dark:hover:text-purple-500">
                   <Link href="https://drive.google.com/file/d/1lVQwMahnav8JBR2qBPeLqzbq9w3oedqo/view?usp=sharing">RESUME</Link>
                 </li>
               </ul>

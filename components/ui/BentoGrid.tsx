@@ -53,6 +53,7 @@ export const BentoGridItem = ({
   const darkModeStyle = {
     background: "rgb(4,7,29)",
     backgroundColor: "linear-gradient(90deg, rgba(4,7,29,1) 0%, rgba(12,14,35,1) 100%)",
+    
   };
 
   return (
@@ -74,13 +75,15 @@ export const BentoGridItem = ({
         isDarkMode ? (
           <BackgroundGradientAnimation>
             <Link href="/about">
-              <div className="absolute z-50 inset-0 flex items-center justify-center text-white font-bold px-4 cursor-pointer text-3xl text-center md:text-4xl lg:text-7xl" />
+              <div className="absolute z-50 inset-0 flex items-center justify-center font-bold px-4 cursor-pointer text-3xl text-center md:text-4xl lg:text-7xl" />
             </Link>
           </BackgroundGradientAnimation>
         ) : (
           <BackgroundGradientAnimationLight>
             <Link href="/about">
-              <div className="absolute z-50 inset-0 flex items-center justify-center !text-black-200 font-bold px-4 cursor-pointer text-3xl text-center md:text-4xl lg:text-7xl" />
+              <div
+              className="absolute z-50 inset-0 flex items-center justify-center font-bold px-4 cursor-pointer text-3xl text-center md:text-4xl lg:text-7xl"
+              />
             </Link>
           </BackgroundGradientAnimationLight>
         )

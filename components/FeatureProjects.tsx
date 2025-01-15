@@ -7,8 +7,8 @@ import { FocusCards } from "./ui/FocusCards";
 const FeatureProjects = () => {
   return (
     <div className="py-48 max-lg:pt-20 max-lg:pb-10">
-      <h1 className="heading text-blue-700 dark:text-purple max-md:text-2xl text-5xl font-bold text-center mb-24">
-        Featured Project
+      <h1 className="heading text-blue-700 dark:text-purple-500 max-md:text-2xl text-5xl font-bold text-center mb-24">
+        Featured Projects
       </h1>
       <div className="flex flex-wrap items-center justify-center p-4 gap-16 mt-10 ">
         <FocusCards />
