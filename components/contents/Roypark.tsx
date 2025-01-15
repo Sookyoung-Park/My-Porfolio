@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 const Roypark = () => {
   return (
-    <div>
+    <div className='text-black-100 dark:text-white'>
     <h3 className="text-2xl font-semibold mt-20 ">Design Process</h3>
       <ul className="list-disc pl-8 mt-8">
       <h3 className="text-lg font-semibold mb-4">Initial Sketch</h3>

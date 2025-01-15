@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 const Cellwars = () => {
   return (
-    <div>
+    <div className='text-black-100 dark:text-white'>
     <h3 className="text-xl font-semibold mt-20 ">Responsibility</h3>
     <p className="text-sm font-medium mb-2 mt-6 leading-6">
     My responsibilities involved generating innovative and impactful ideas for the environment design and creating compelling visuals that aligned with the project's goals. I also ensured that the environment was optimized for efficiency and functionality, making it easy for users to interact with and navigate. Additionally, I designed the user's hand to provide a seamless and intuitive experience, and I animated the environment to bring it to life and enhance the user's engagement. Overall, my contributions were critical to the success of the project, and I am proud of the results we achieved through my efforts.

@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const Meu = () => {
   return (
-    <div>
+    <div className='text-black-100 dark:text-white'>
         <h3 className="text-2xl text-center font-semibold mt-24 leading-10">How might we enhance spontaneous interactions <br/>for long-distance couples?</h3>
     <div className="flex justify-center items-center">
       <Image 

@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 const Plateus = () => {
   return (
-    <div>
+    <div className='text-black-100 dark:text-white'> 
     <h3 className="text-2xl font-semibold mt-20 ">UX Research</h3>
       <h3 className="text-lg font-semibold mt-12 mb-4">The Proposal</h3>
       <div className="flex justify-center items-center">

@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const Namespace = () => {
   return (
-    <div>
+    <div className='text-black-100 dark:text-white'>
         <div className="flex justify-center items-center">
             <Image 
                 src="/projects/name-space/name-space-mockup2.png" 

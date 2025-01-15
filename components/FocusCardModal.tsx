@@ -40,19 +40,17 @@ export const FocusCardModal = ({ card, isOpen, onClose }: any) => {
             >
               <IconX className="h-6 w-6 text-neutral-100 dark:text-neutral-900" />
             </button>
-            {/* <div className="py-10">{card.content}</div> */}
             <div className="py-10 dark:text-neutral-100">
-              {/* placeholder */}
                 <Image
                   src={card.img} width={1000} height={100} alt="test" 
                 />
-                <h2 className="text-4xl font-bold mt-10">{card?.title || "No Title"}</h2>
-                <h4 className="text-sm font-medium mt-6"> {card?.type || "No project type"} </h4>
-                <h4 className="text-sm font-medium mt-1"> Tool: {card?.tool ? card.tool.join(", ") : "No Tool"} </h4>
-                <h4 className="text-sm font-medium mt-1 mb-14"> Timeline: {card?.timeline || "No timeline"} </h4>
+                <h2 className="text-4xl font-bold mt-10 text-black-100 dark:text-white">{card?.title || "No Title"}</h2>
+                <h4 className="text-sm font-medium mt-6 text-black-100 dark:text-white"> {card?.type || "No project type"} </h4>
+                <h4 className="text-sm font-medium mt-1 text-black-100 dark:text-white"> Tool: {card?.tool ? card.tool.join(", ") : "No Tool"} </h4>
+                <h4 className="text-sm font-medium mt-1 mb-14 text-black-100 dark:text-white"> Timeline: {card?.timeline || "No timeline"} </h4>
 
-                <h4 className="text-lg font-semibold mb-4"> Project Overview </h4>
-                <p className="text-sm font-regular">{card?.overview || "No Title"}</p>
+                <h4 className="text-lg font-semibold mb-4 text-black-100 dark:text-white"> Project Overview </h4>
+                <p className="text-sm font-regular text-black-100 dark:text-white">{card?.overview || "No Title"}</p>
 
                 {/* from here */}
                 {ContentComponent ? (

@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 const RevivingViva = () => {
   return (
-    <div>
+    <div className='text-black-100 dark:text-white'>
       <ul className="list-disc mt-16">
       <h3 className="text-lg font-semibold mt-24 mb-4">Process</h3>
           <p className="text-sm mt-4">

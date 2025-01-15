@@ -43,10 +43,10 @@ const About = () => {
     className=" object-cover mb-4 md:mb-0 h-[320px]"
   />
   <div className="flex flex-col text-left">
-    <h1 className="text-3xl md:text-5xl font-bold text-neutral-800 dark:text-white">
+    <h1 className="text-3xl md:text-5xl font-semibold text-neutral-800 dark:text-white mb-6">
       Sookyoung Park
     </h1>
-    <p className="text-sm md:text-base text-neutral-600 dark:text-neutral-400 max-w-xl mt-4">
+    <p className="text-xs md:text-base text-neutral-600 dark:text-neutral-400 max-w-xl mt-4 leading-6">
       I am a unique combination of a designer and developer with a background in design, art, and computer science.
       My skills range from UI/UX design to implementation, and I have professional experience working in both areas.
     </p>

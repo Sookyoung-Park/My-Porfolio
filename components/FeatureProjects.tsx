@@ -14,9 +14,9 @@ const FeatureProjects = () => {
         <FocusCards />
         <Link href="/project-page">
           <MagicButton
-            title="View More Projects"
+            title="More Projects"
             icon={<FaFolderOpen />}
-            position="right"
+            position="left"
           />
         </Link>
       </div>

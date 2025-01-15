@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 const Bioluminescent = () => {
   return (
-    <div>
+    <div className='text-black-100 dark:text-white'>
     <h3 className="text-2xl font-semibold mt-20 mb-4">Design Process</h3>
     <p className="text-sm font-medium leading-6 mt-2 mb-4">
     The game will feature a realistic and immersive atmosphere, with realistic lighting and sound effects, that are inspired by the movie "Avatar". The game will be designed in a way that allows players to interact with the environment in a natural and intuitive way.

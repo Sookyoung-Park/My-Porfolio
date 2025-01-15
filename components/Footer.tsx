@@ -24,7 +24,7 @@ const Footer = () => {
       </div>
 
       <div className="flex mt-40 md:flex-row flex-col justify-between mb-24">
-        <p className="text-[12px] md:font-normal font-light dark:text-white text-black-200 max-md:text-center">
+        <p className="text-[13px] md:font-normal font-light dark:text-white text-black-200 max-md:text-center">
           All right reserved by Sookyoung Park
         </p>
 
@@ -40,10 +40,10 @@ const Footer = () => {
         <div className="flex items-center md:gap-3 gap-6  max-md:hidden">
         <div className="max-w-7xl w-full px-5">
               <ul className="text-neutral-600 dark:text-neutral-400 list-disc space-y-2 text-[14px]">
-                <li className="transition ease-in-out delay-150 hover:scale-110 hover:text-blue-500 dark:hover:text-purple-500">
+                <li className="transition ease-in-out delay-120 hover:scale-110 hover:text-blue-500 dark:hover:text-purple-500">
                   <Link href="/project-page">PROJECTS</Link>
                 </li>
-                <li className="transition ease-in-out delay-150 hover:scale-110 hover:text-blue-500 dark:hover:text-purple-500">
+                <li className="transition ease-in-out delay-120 hover:scale-110 hover:text-blue-500 dark:hover:text-purple-500">
                   <Link href="https://drive.google.com/file/d/1lVQwMahnav8JBR2qBPeLqzbq9w3oedqo/view?usp=sharing">RESUME</Link>
                 </li>
               </ul>
@@ -55,7 +55,7 @@ const Footer = () => {
             <a href={info.link} key={info.id}>
               <div
                 key={info.id}
-                className="w-9 h-9 cursor-pointer flex justify-center items-center backdrop-filter backdrop-blur-lg saturate-180 bg-opacity-75  bg-black-100 dark:bg-black-200/70 rounded-lg border border-black-300/5"
+                className="w-9 h-9 cursor-pointer flex justify-center items-center backdrop-filter backdrop-blur-lg saturate-180 bg-opacity-75  bg-black-100 dark:bg-black-200/70 rounded-lg border border-black-300/5 transition ease-in-out delay-120 hover:scale-105"
               >
                 <img src={info.img} alt="icons" width={24} height={24} />
               </div>
