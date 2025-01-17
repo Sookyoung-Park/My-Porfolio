@@ -68,7 +68,7 @@ export const AllFocusCards = () => {
     <div className="space-y-8">
       <div className="flex space-x-4 mb-20 items-center justify-center">
         <button
-          className={`px-4 py-2 rounded-md border border-neutral-300/40 text-sm transform transition duration-200 ${
+          className={`px-4 py-2 rounded-md border border-neutral-300/40 text-sm max-md:text-[12px] transform transition duration-200 ${
             activeButton === "All Projects"
               ? "dark:bg-purple-500 bg-blue-400 text-white border-none"
               : "text-black-200 dark:text-white hover:-translate-y-1 hover:shadow-md"
@@ -80,7 +80,7 @@ export const AllFocusCards = () => {
         {["UIUX Design", "Development Project", "Fun!"].map((badge) => (
           <button
             key={badge}
-            className={`px-4 py-2 rounded-md border border-neutral-300/40 text-sm transform transition duration-200 ${
+            className={`px-4 py-2 rounded-md border border-neutral-300/40 text-sm max-md:text-[12px] transform transition duration-200 ${
               activeButton === badge
                 ? "dark:text-purple-500 dark:border-purple-500 text-blue-400 border-blue-400"
                 : "text-black-200 dark:text-white hover:-translate-y-1 hover:shadow-md"
