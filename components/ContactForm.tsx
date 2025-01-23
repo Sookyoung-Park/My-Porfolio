@@ -3,10 +3,6 @@ import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import MagicButton from "./ui/MagicButton";
 import { IoIosSend } from "react-icons/io";
-import { useToast } from '@/hooks/use-toast';
-import { Button } from "@/components/ui/button"
-import { ToastAction } from "@/components/ui/toast"
-
 
 const ContactForm = () => {
     const form = useRef<HTMLFormElement | null>(null);

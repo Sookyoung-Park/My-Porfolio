@@ -1,5 +1,4 @@
 'use client'
-
 import { useTheme } from "next-themes";
 import { motion } from "framer-motion";
 import { AuroraBackground } from "./ui/AuroraBackground";
@@ -38,8 +37,8 @@ const Hero = () => {
           </div>
             <div className="flex justify-center">
               <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center">
-                <p className="uppercase tracking-widest text-xs text-center text-blue-100 max-w-80 z-10">
-                    s00kyoung Park
+                <p className="uppercase tracking-widest text-xs text-center font-semibold text-blue-200 max-w-80 z-10">
+                    Sookyoung Park
                 </p>
                 <FlipWords
                   words={["UI ENGINEER", "UI/UX DESIGNER"]}
