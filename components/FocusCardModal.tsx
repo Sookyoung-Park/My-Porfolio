@@ -24,7 +24,7 @@ import { useState, useEffect } from "react";
   
   export const FocusCardModal: React.FC<FocusCardModalProps> = ({ card, isOpen, onClose }) => {
 
-  console.log("hereL ",card)
+  // console.log("hereL ",card)
   const [ContentComponent, setContentComponent] = useState<React.ComponentType | null>(null);
 
   useEffect(() => {

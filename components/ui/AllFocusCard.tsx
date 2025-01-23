@@ -5,7 +5,8 @@ import Image from "next/image";
 import { FocusCardModal } from "../FocusCardModal";
 
 export const AllFocusCards = () => {
-  const [modalData, setModalData] = useState(null); // To hold card data for modal
+  // const [modalData, setModalData] = useState(null); // To hold card data for modal
+  const [modalData, setModalData] = useState<CardData | null>(null); // State can be either CardData or null
   const [selectedBadges, setSelectedBadges] = useState<string[]>([]); // To store multiple selected badges
   const [currentPage, setCurrentPage] = useState(1); // To handle pagination
   const [activeButton, setActiveButton] = useState("All Projects"); // Track active button
@@ -25,15 +26,42 @@ export const AllFocusCards = () => {
     currentPage * projectsPerPage
   );
 
-  const handleCardClick = (cardData) => {
+  // const handleCardClick = (cardData) => {
+  //   console.log('here yo lolo:' , cardData)
+  //   const { isGithub, link } = cardData;
+  
+  //   if (isGithub && link) {
+  //     window.open(link, "_blank");
+  //   } else {
+  //     setModalData(cardData); // 모든 데이터 전달
+  //   }
+  // };
+
+  interface CardData {
+    title: string;
+    des: string;
+    img: string;
+    badge: string[]; // badge is a string array, not a single string
+    isGithub: boolean;
+    link?: string; // link is an optional property
+    type?: string; // Add type property
+    tool?: string[]; // Add tool property
+    timeline?: string; // Add timeline property
+    overview?: string; // Add overview property
+    content?: string; // Add content property
+  }
+
+  const handleCardClick = (cardData: CardData) => {
+    console.log("here yo lolo:", cardData);
     const { isGithub, link } = cardData;
   
     if (isGithub && link) {
       window.open(link, "_blank");
     } else {
-      setModalData(cardData); // 모든 데이터 전달
+      setModalData(cardData); // Pass all card data
     }
   };
+  
   
 
   const closeModal = () => {
@@ -160,14 +188,14 @@ export const AllFocusCards = () => {
       {modalData && (
         <FocusCardModal
           card={modalData}
-          title={modalData.title}
-          type={modalData.type}
-          tool={modalData.tool}
-          timeline={modalData.timeline}
-          overview={modalData.overview}
-          content={modalData.content}
-          description={modalData.des}
-          imageSrc={modalData.img}
+          // title={modalData.title}
+          // type={modalData.type}
+          // tool={modalData.tool}
+          // timeline={modalData.timeline}
+          // overview={modalData.overview}
+          // content={modalData.content}
+          // description={modalData.des}
+          // imageSrc={modalData.img}
           isOpen={!!modalData}
           onClose={closeModal}
         />
