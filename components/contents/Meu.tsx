@@ -96,7 +96,7 @@ const Meu = () => {
           </p>
           <ul className="list-disc pl-16">
             <li className="mt-4 text-sm leading-6">An anxious overthinking long-distance relationship partner needs a supportive and interactive app that facilitates seamless communication and spontaneous interaction in order to alleviate anxiety and strengthen the emotional bond with their partner despite the physical distance.</li>
-            <li className="text-sm mt-4 leading-6">A busy professional in a long-distance relationship needs a convenient and efficient system that allows for easy sharing of photos and life updates in order to stay connected, feel involved in their partner's daily life, and maintain a sense of closeness and shared experiences.</li>
+            <li className="text-sm mt-4 leading-6">A busy professional in a long-distance relationship needs a convenient and efficient system that allows for easy sharing of photos and life updates in order to stay connected, feel involved in their partner&apos;s daily life, and maintain a sense of closeness and shared experiences.</li>
           </ul>
 
           <p className="pl-8 mt-12 text-sm leading-6">
@@ -133,7 +133,7 @@ const Meu = () => {
       <li className="mt-20">
         <strong className="font-regular text-lg">Branding & UI Design</strong>
         {/*  - Crazy 8 (initial Sketch), Grayscale, Low-fidelity, Highmediumity, Style guide */}
-        <p className="text-sm mt-4 leading-6">After conducting comprehensive research and analyzing design patterns that align with the information architecture, business objectives, and user requirements, we brainstormed potential solutions. We employed rapid group sketching, utilizing techniques like 'Crazy 8' to propel our thoughts and ideas forward, with a primary focus on addressing 'How Might We' questions within an iterative framework.</p>
+        <p className="text-sm mt-4 leading-6">After conducting comprehensive research and analyzing design patterns that align with the information architecture, business objectives, and user requirements, we brainstormed potential solutions. We employed rapid group sketching, utilizing techniques like &apos;Crazy 8&apos; to propel our thoughts and ideas forward, with a primary focus on addressing &apos;HMW(How Might We)&apos; questions within an iterative framework.</p>
         <p className="pl-8 mt-12 text-sm leading-6">
           <h4 className="font-semibold text-lg mt-10">Initial Sketch with Crazy 8 Method</h4>
         </p>

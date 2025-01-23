@@ -2,18 +2,19 @@
 import { socialMedia } from "@/data";
 import ContactForm from "./ContactForm";
 import Link from "next/link";
+import Image from "next/image";
 
 const Footer = () => {
   return (
     <footer className="w-full pt-20 pb-10" id="contact">
       <div className="flex flex-row max-lg:flex-col max-lg:text-center">
         <h1 className="text-black-200 dark:text-white-200 heading lg:max-w-[40vw] text-2xl font-semibold max-lg:hidden">
-          Let's build something to change the world! <br/>
+          Let&apos;s build something to change the world! <br/>
           If you are interested in  <span className="text-blue-700 dark:text-purple">collaboration</span>, <br/>feel free to contact me.
         </h1>
 
         <h1 className=" text-black-200 dark:text-white-200 heading lg:max-w-[48vw] text-2xl font-semibold lg:hidden xl:hidden 2xl:hidden max-lg:pb-8 max-md:pb-2 md:text-lg max-sm:hidden">
-          Let's build something to change the world! <br/>
+          Let&apos;s build something to change the world! <br/>
           If you are interested in  <span className="text-purple">collaboration</span>, 
           <br/>feel free to contact me!
         </h1>
@@ -57,7 +58,11 @@ const Footer = () => {
                 key={info.id}
                 className="w-9 h-9 cursor-pointer flex justify-center items-center backdrop-filter backdrop-blur-lg saturate-180 bg-opacity-75  bg-black-100 dark:bg-black-200/70 rounded-lg border border-black-300/5 transition ease-in-out delay-120 hover:scale-105"
               >
-                <img src={info.img} alt="icons" width={24} height={24} />
+                <Image
+                src={info.img}
+                alt='icons'
+                width={24}
+                height={24}/>
               </div>
           </a>
             

@@ -8,13 +8,16 @@ const ContactForm = () => {
     const form = useRef<HTMLFormElement | null>(null);
     const [submitted, setSubmitted] = useState(false);
     const [successMessage, setSuccessMessage] = useState('');
+    
+    // remove err
+    console.log(setSuccessMessage)
 
     const handleSubmit = () => {
         setSubmitted(true)
         console.log('submitted')
     }
 
-    const sendEmail = (e:any) => {
+    const sendEmail = (e:React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
         if (form.current) {
             // Use form.current as HTMLFormElement

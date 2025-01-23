@@ -4,7 +4,25 @@ import { IconX } from "@tabler/icons-react";
 import Image from "next/image";
 import { useState, useEffect } from "react";
 
-export const FocusCardModal = ({ card, isOpen, onClose }: any) => {
+// export const FocusCardModal = ({ card, isOpen, onClose }: any) => {
+
+  interface Card {
+    img: string;
+    title?: string;
+    type?: string;
+    tool?: string[];
+    timeline?: string;
+    overview?: string;
+    content?: string;
+  }
+  
+  interface FocusCardModalProps {
+    card: Card;
+    isOpen: boolean;
+    onClose: () => void;
+  }
+  
+  export const FocusCardModal: React.FC<FocusCardModalProps> = ({ card, isOpen, onClose }) => {
 
   console.log("hereL ",card)
   const [ContentComponent, setContentComponent] = useState<React.ComponentType | null>(null);

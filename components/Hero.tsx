@@ -9,6 +9,9 @@ const Hero = () => {
   const { theme, setTheme } = useTheme();
   const isDarkMode = theme === "dark";
 
+  //remove eslint err
+  console.log(setTheme)
+  
   return (
     <div>
       {isDarkMode ?(

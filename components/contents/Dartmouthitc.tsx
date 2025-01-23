@@ -21,13 +21,13 @@ const Dartmouthitc = () => {
                 <p className="text-sm font-medium mt-2 mb-2 leading-6">One notable issue is the small font size, particularly when navigating the course listings on the left-hand side. It demands careful attention from users.</p>
               </li>
               <li>
-                <p className="text-sm font-medium mt-4 mb-2 leading-6">The "Sort by department" filter feature seems to be present but hasn't been very intuitive or effective.</p>
+                <p className="text-sm font-medium mt-4 mb-2 leading-6">The &quot;Sort by department&quot; filter feature seems to be present but hasn&apos;t been very intuitive or effective.</p>
               </li>
               <li>
                 <p className="text-sm font-medium mt-4 mb-2 leading-6">Crosslisted courses, often inundating the interface with multiple department labels (e.g., Chemistry). This can be confusing for users who may not fully comprehend the significance of crosslisting.</p>
               </li>
               <li>
-                <p className="text-sm font-medium mt-4 mb-2 leading-6">There's a sentiment that some information, such as term numbers and other perplexing numerical data, may be unnecessary. If these data points are vital, there should be clear explanations provided.</p>
+                <p className="text-sm font-medium mt-4 mb-2 leading-6">There&apos;s a sentiment that some information, such as term numbers and other perplexing numerical data, may be unnecessary. If these data points are vital, there should be clear explanations provided.</p>
               </li>
               <li>
                 <p className="text-sm font-medium mt-4 mb-2 leading-6">Many users express a desire for greater flexibility in presets and filters. Currently, it feels somewhat cumbersome, as you need to navigate back to make changes. It would be more user-friendly if adjustments could be made directly while reviewing the options.</p>

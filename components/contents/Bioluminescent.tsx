@@ -6,7 +6,7 @@ const Bioluminescent = () => {
     <div className='text-black-100 dark:text-white'>
     <h3 className="text-2xl font-semibold mt-20 mb-4">Design Process</h3>
     <p className="text-sm font-medium leading-6 mt-2 mb-4">
-    The game will feature a realistic and immersive atmosphere, with realistic lighting and sound effects, that are inspired by the movie "Avatar". The game will be designed in a way that allows players to interact with the environment in a natural and intuitive way.
+    The game will feature a realistic and immersive atmosphere, with realistic lighting and sound effects, that are inspired by the movie &quot;Avatar&quot;. The game will be designed in a way that allows players to interact with the environment in a natural and intuitive way.
     </p>
       <ul className="list-disc mt-16">
       <h3 className="text-lg font-semibold mt-24 mb-4">Initial Terrian Sketch</h3>
@@ -22,7 +22,7 @@ const Bioluminescent = () => {
 
       <h3 className="text-lg font-semibold mt-24 mb-4">White-Box</h3>
       <p className="text-sm font-medium leading-6 mt-2 mb-4">
-      In order to create a immersive design, I wanted to create a more flexible and naturalistic terrian desing instead of default regular terrain. This involved utilizing the ocean at two edges of the terrain, which helped to create a more organic overall form. The project was inspired by the movie "Avatar", I also incorporated floating islands in the sky to further enhance the "Avatar" atmosphere in the game.
+      In order to create a immersive design, I wanted to create a more flexible and naturalistic terrian desing instead of default regular terrain. This involved utilizing the ocean at two edges of the terrain, which helped to create a more organic overall form. The project was inspired by the movie `&quot;Avatar`&quot;, I also incorporated floating islands in the sky to further enhance the `&quot;Avatar`&quot; atmosphere in the game.
       </p>
       <div className="flex flex-col justify-center items-center">
         <Image 
@@ -50,7 +50,7 @@ const Bioluminescent = () => {
 
       <h3 className="text-lg font-semibold mt-24 mb-4">Lighting & Shade</h3>
       <p className="text-sm font-medium leading-6 mt-2 mb-4">
-      I have increased the emissiveness of the water color to improve the player's visibility in the environment, especially during nighttime or in dark areas with low lighting.
+      I have increased the emissiveness of the water color to improve the player&apos;s visibility in the environment, especially during nighttime or in dark areas with low lighting.
       </p>
       <div className="flex flex-col justify-center items-center">
         <Image 
@@ -71,7 +71,7 @@ const Bioluminescent = () => {
 
       <h3 className="text-lg font-semibold mt-24 mb-4">Final Terrain Design</h3>
       <p className="text-sm font-medium leading-6 mt-2 mb-4">
-      I have increased the emissiveness of the water color to improve the player's visibility in the environment, especially during nighttime or in dark areas with low lighting.
+      I have increased the emissiveness of the water color to improve the player&apos;s visibility in the environment, especially during nighttime or in dark areas with low lighting.
       </p>
       <div className="flex flex-col justify-center items-center">
         <Image 
