@@ -28,11 +28,11 @@ const Plateus = () => {
             <ul className="list-disc pl-8">
               <li>
                 <p className="text-sm font-medium mt-2 mb-2">Healthy & Satifying Meal</p>
-                <p className="text-sm mt-2 leading-6">The primary objective of "Plateus" is to encourage healthier eating habits among students by offering a wide range of affordable and nutritious food choices.</p>
+                <p className="text-sm mt-2 leading-6">The primary objective of &quot;Plateus&quot; is to encourage healthier eating habits among students by offering a wide range of affordable and nutritious food choices.</p>
               </li>
               <li>
                 <p className="text-sm font-medium mt-4 mb-2">Experience Diversity & Create a New Culture</p>
-                <p className="text-sm mt-2 leading-6">At our core, we are on a mission to cultivate a fresh culture that enhances the overall quality of students' lives. We extend a warm welcome to all students who are determined to elevate the significance of their mealtimes and are committed to embracing a healthier approach to eating..</p>
+                <p className="text-sm mt-2 leading-6">At our core, we are on a mission to cultivate a fresh culture that enhances the overall quality of students&apos; lives. We extend a warm welcome to all students who are determined to elevate the significance of their mealtimes and are committed to embracing a healthier habit.</p>
               </li>
               <li>
                 <p className="text-sm font-medium mt-4 mb-2">Simple & Fun User Experience</p>

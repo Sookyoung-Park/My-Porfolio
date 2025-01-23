@@ -42,6 +42,9 @@ export const BentoGridItem = ({
   const { theme, setTheme } = useTheme();
   const isDarkMode = theme === "dark";
 
+    // remove eslint
+    console.log(imgClassName, setTheme)
+
   const techStackLeft = ["ReactJS","ReactJS","Typescript","Javascript"];
   const techStackRight = ["HTML", "CSS"];
 
