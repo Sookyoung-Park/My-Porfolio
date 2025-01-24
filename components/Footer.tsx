@@ -45,10 +45,8 @@ const Footer = () => {
                   <Link href="/project-page">PROJECTS</Link>
                 </li>
                 <li className="transition ease-in-out delay-120 hover:scale-110 hover:text-blue-500 dark:hover:text-purple-500">
-                  <Link href="https://drive.google.com/file/d/1UVAyUb04jQqJfIsoXkhSQUWHeZCWZ6tq/view?usp=sharing">
-                    <a target="_blank" rel="noopener noreferrer">
+                  <Link href="https://drive.google.com/file/d/1G3kKpSOtHDbq4bTMk8shMo0cGI_fu_-B/view?usp=sharing" target="_blank" rel="noopener noreferrer">
                       RESUME
-                    </a>
                   </Link>
                 </li>
               </ul>
