@@ -5,15 +5,31 @@ import Image from "next/image";
 import { FocusCardModal } from "../FocusCardModal";
 
 export const FocusCards = () => {
-  const [modalData, setModalData] = useState(null); // To hold card data for modal
+  const [modalData, setModalData] = useState<CardData | null>(null); // State can be either CardData or null
 
-  const handleCardClick = (cardData) => {
-    if (cardData.isGithub && cardData.link) {
-      // If isGithub is true and link exists, open the link
-      window.open(cardData.link, "_blank");
+  interface CardData {
+    id: number; // Add the id property
+    title: string;
+    des: string;
+    img: string;
+    badge: string[]; // badge is a string array, not a single string
+    isGithub: boolean;
+    link?: string; // link is an optional property
+    type?: string; // Add type property
+    tool?: string[]; // Add tool property
+    timeline?: string; // Add timeline property
+    overview?: string; // Add overview property
+    content?: string; // Add content property
+  }
+
+  const handleCardClick = (cardData: CardData) => {
+    console.log("here yo lolo:", cardData);
+    const { isGithub, link } = cardData;
+  
+    if (isGithub && link) {
+      window.open(link, "_blank");
     } else {
-      // Otherwise, open the modal
-      setModalData(cardData);
+      setModalData(cardData); // Pass all card data
     }
   };
 
@@ -62,27 +78,9 @@ export const FocusCards = () => {
           </div>
         </div>
       ))}
-      {/* Modal Display */}
-      {/* {modalData && (
-        <FocusCardModal
-          title={modalData.title}
-          description={modalData.des}
-          imageSrc={modalData.img}
-          isOpen={!!modalData}
-          onClose={closeModal}
-        />
-      )} */}
       {modalData && (
         <FocusCardModal
           card={modalData}
-          title={modalData.title}
-          type={modalData.type}
-          tool={modalData.tool}
-          timeline={modalData.timeline}
-          overview={modalData.overview}
-          content={modalData.content}
-          description={modalData.des}
-          imageSrc={modalData.img}
           isOpen={!!modalData}
           onClose={closeModal}
         />

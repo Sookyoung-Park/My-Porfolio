@@ -6,9 +6,13 @@ const nextConfig: NextConfig = {
     typescript:{
         ignoreBuildErrors:true,
     },
+    images: {
+      domains: ['s00kyoung.me'],
+      unoptimized: true,
+    },
     // eslint: {
     //   ignoreDuringBuilds: true,
     // },
 };
 
-export default nextConfig;
+module.exports = nextConfig

@@ -2,21 +2,23 @@
 import { FloatingNavbar } from "@/components/ui/FloatingNavbar";
 import MagicButton from "@/components/ui/MagicButton";
 import Footer from "@/components/Footer";
-import Image from "next/image";
+// import Image from "next/image";
 import Link from "next/link";
 import { navItems } from "@/data";
 import { IoIosDocument } from "react-icons/io";
+
 
 const About = () => {
   return (
     <main className="relative bg-white dark:bg-black-100 flex justify-center items-center flex-col overflow-hidden mx-auto sm:px-10 px-5">
       <div className="flex flex-col md:flex-row items-center justify-center text-center mt-20 space-y-8 md:space-y-0 md:space-x-16">
-        <Image 
+        <img
+          // unoptimized 
           src="/profile.png" 
           alt="Profile Picture"
-          width={300}
-          height={300}
-          className=" object-cover mb-4 md:mb-0 h-[320px]"
+          // width={300}
+          // height={300}
+          className=" object-cover mb-4 md:mb-0 h-[320px] w-[300px]"
         />
       <div className="flex flex-col text-left">
         <h1 className="text-3xl md:text-5xl font-semibold text-neutral-800 dark:text-white mb-6">
