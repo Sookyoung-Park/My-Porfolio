@@ -28,14 +28,7 @@ const About = () => {
           My skills range from UI/UX design to implementation, and I have professional experience working in both areas.
         </p>
         <div className="mt-6">
-          {/* <Link href="https://drive.google.com/file/d/1lVQwMahnav8JBR2qBPeLqzbq9w3oedqo/view?usp=sharing">
-            <MagicButton
-              title="View Resume"
-              icon={<IoIosDocument />}
-              position="left"
-            />
-          </Link> */}
-          <Link href="https://drive.google.com/file/d/1lVQwMahnav8JBR2qBPeLqzbq9w3oedqo/view?usp=sharing" passHref>
+          <Link href="https://drive.google.com/file/d/1UVAyUb04jQqJfIsoXkhSQUWHeZCWZ6tq/view?usp=sharing" passHref>
             <a target="_blank" rel="noopener noreferrer">
               <MagicButton
                 title="View Resume"
