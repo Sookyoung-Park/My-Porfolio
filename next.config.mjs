@@ -1,13 +1,13 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
     output: 'export',
-    typescript:{
-        ignoreBuildErrors:true,
+    typescript: {
+      ignoreBuildErrors: true,
     },
     images: {
-        domains: ['s00kyoung.me'],
-        unoptimized: true,
+      unoptimized: true, // 이미지 최적화 비활성화
     },
-};
-
-export default nextConfig
+  };
+  
+  export default nextConfig;
+  

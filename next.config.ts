@@ -1,18 +1,16 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
   output: 'export',
-    typescript:{
-        ignoreBuildErrors:true,
-    },
-    images: {
-      domains: ['s00kyoung.me'],
-      unoptimized: true,
-    },
-    // eslint: {
-    //   ignoreDuringBuilds: true,
-    // },
+  typescript: {
+    ignoreBuildErrors: true,
+  },
+  images: {
+    unoptimized: true, // 이미지 최적화 비활성화
+  },
+  // eslint: {
+  //   ignoreDuringBuilds: true,
+  // },
 };
 
-module.exports = nextConfig
+export default nextConfig;

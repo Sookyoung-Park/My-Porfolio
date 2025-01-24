@@ -12,8 +12,7 @@ const About = () => {
   return (
     <main className="relative bg-white dark:bg-black-100 flex justify-center items-center flex-col overflow-hidden mx-auto sm:px-10 px-5">
       <div className="flex flex-col md:flex-row items-center justify-center text-center mt-20 space-y-8 md:space-y-0 md:space-x-16">
-        <img
-          // unoptimized 
+        <img 
           src="/profile.png" 
           alt="Profile Picture"
           // width={300}
@@ -29,12 +28,21 @@ const About = () => {
           My skills range from UI/UX design to implementation, and I have professional experience working in both areas.
         </p>
         <div className="mt-6">
-          <Link href="https://drive.google.com/file/d/1lVQwMahnav8JBR2qBPeLqzbq9w3oedqo/view?usp=sharing">
+          {/* <Link href="https://drive.google.com/file/d/1lVQwMahnav8JBR2qBPeLqzbq9w3oedqo/view?usp=sharing">
             <MagicButton
               title="View Resume"
               icon={<IoIosDocument />}
               position="left"
             />
+          </Link> */}
+          <Link href="https://drive.google.com/file/d/1lVQwMahnav8JBR2qBPeLqzbq9w3oedqo/view?usp=sharing" passHref>
+            <a target="_blank" rel="noopener noreferrer">
+              <MagicButton
+                title="View Resume"
+                icon={<IoIosDocument />}
+                position="left"
+              />
+            </a>
           </Link>
         </div>
       </div>
