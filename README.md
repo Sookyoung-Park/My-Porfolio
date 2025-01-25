@@ -1,4 +1,4 @@
-![LandingPage](https://github.com/Sookyoung-Park/Apple-Website/blob/main/assets/readme_landingPage.gif?raw=true)
+![LandingPage](https://github.com/Sookyoung-Park/my-porfolio/blob/main/public/mockup-1.png?raw=true)
 
 <div>
     <img src="https://img.shields.io/badge/-Next_JS-black?style=for-the-badge&logoColor=white&logo=next.js&color=000000" alt="react.js" />
@@ -60,5 +60,6 @@ npm run dev
 
 
 ## **Screenshots**
-![Screenshot1](https://github.com/Sookyoung-Park/Apple-Website/blob/main/assets/readme_page2.gif?raw=true)
-![Screenshot2](https://github.com/Sookyoung-Park/Apple-Website/blob/main/assets/readme_page3.gif?raw=true)
+![Screenshot1](https://github.com/Sookyoung-Park/my-porfolio/blob/main/public/mockup-2.png?raw=true)
+![Screenshot2](https://github.com/Sookyoung-Park/my-porfolio/blob/main/public/mockup-3.png?raw=true)
+![Screenshot3](https://github.com/Sookyoung-Park/my-porfolio/blob/main/public/mockup-4.png?raw=true)
