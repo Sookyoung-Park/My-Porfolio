@@ -1,36 +1,64 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+![LandingPage](https://github.com/Sookyoung-Park/Apple-Website/blob/main/assets/readme_landingPage.gif?raw=true)
 
-## Getting Started
+<div>
+    <img src="https://img.shields.io/badge/-Next_JS-black?style=for-the-badge&logoColor=white&logo=next.js&color=000000" alt="react.js" />
+    <img src="https://img.shields.io/badge/-Tailwind_CSS-black?style=for-the-badge&logoColor=black&logo=tailwindcss&color=fafafa" alt="tailwindcss" />
+    <img src="https://img.shields.io/badge/-Typescript-black?style=for-the-badge&logoColor=white&logo=typescript&color=2066d6" alt="typescript" />
+    <img src="https://img.shields.io/badge/-Aceternity_UI-black?style=for-the-badge&logoColor=white&color=d91aa6" alt="aceternity ui" />
+    
+</div>
 
-First, run the development server:
+
+# 🍏 Portfolio 2025
+
+## **Introduction**
+
+Built with Next.js for handling the user interface, and styled with TailwindCSS and aceternity UI. <a href="https://www.s00kyoung.me">Please check the deployed website here!</a>
+
+## **Tech Stack**
+- Next.js
+- Tailwindcss
+- Typescript
+- Tailwind CSS
+- Aceternity UI
+
+
+## **Main Features**
+- Hero Section featured with a aurora background, Spotlight, FlipWord Effect from Aceternity UI.
+- Modern layout presenting projects using Bento Grid
+- Contact Form with Email.js
+- Category Buttons for filter projects
+- Responsive Design to adpat across all device.
+- Dark Mode & Light Mode
+
+
+
+## **Usage**
+You need to add your own content tsx files and images to run the code.
+
+
+- **Cloning the Repository**
+
+```bash
+git clone https://github.com/Sookyoung-Park/my-porfolio.git
+cd my-portfolio
+```
+
+- **Installation**
+
+Install the project dependencies using npm:
+
+```bash
+npm install
+```
+
+- **Running the Project**
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## **Screenshots**
+![Screenshot1](https://github.com/Sookyoung-Park/Apple-Website/blob/main/assets/readme_page2.gif?raw=true)
+![Screenshot2](https://github.com/Sookyoung-Park/Apple-Website/blob/main/assets/readme_page3.gif?raw=true)
