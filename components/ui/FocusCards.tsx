@@ -5,31 +5,30 @@ import Image from "next/image";
 import { FocusCardModal } from "../FocusCardModal";
 
 export const FocusCards = () => {
-  const [modalData, setModalData] = useState<CardData | null>(null); // State can be either CardData or null
+  const [modalData, setModalData] = useState<CardData | null>(null);
 
   interface CardData {
-    id: number; // Add the id property
+    id: number; 
     title: string;
     des: string;
     img: string;
-    badge: string[]; // badge is a string array, not a single string
+    badge: string[];
     isGithub: boolean;
-    link?: string; // link is an optional property
-    type?: string; // Add type property
-    tool?: string[]; // Add tool property
-    timeline?: string; // Add timeline property
-    overview?: string; // Add overview property
-    content?: string; // Add content property
+    link?: string;
+    type?: string;
+    tool?: string[];
+    timeline?: string;
+    overview?: string;
+    content?: string;
   }
 
   const handleCardClick = (cardData: CardData) => {
-    console.log("here yo lolo:", cardData);
     const { isGithub, link } = cardData;
   
     if (isGithub && link) {
       window.open(link, "_blank");
     } else {
-      setModalData(cardData); // Pass all card data
+      setModalData(cardData);
     }
   };
 

@@ -2,7 +2,6 @@
 import { FloatingNavbar } from "@/components/ui/FloatingNavbar";
 import MagicButton from "@/components/ui/MagicButton";
 import Footer from "@/components/Footer";
-// import Image from "next/image";
 import Link from "next/link";
 import { navItems } from "@/data";
 import { IoIosDocument } from "react-icons/io";
@@ -15,8 +14,6 @@ const About = () => {
         <img 
           src="/profile.png" 
           alt="Profile Picture"
-          // width={300}
-          // height={300}
           className=" object-cover mb-4 md:mb-0 h-[320px] w-[300px]"
         />
       <div className="flex flex-col text-left">
@@ -29,13 +26,11 @@ const About = () => {
         </p>
         <div className="mt-6">
           <Link href="https://drive.google.com/file/d/1G3kKpSOtHDbq4bTMk8shMo0cGI_fu_-B/view?usp=sharing" target="_blank" rel="noopener noreferrer">
-            {/* <a target="_blank" rel="noopener noreferrer"> */}
               <MagicButton
                 title="View Resume"
                 icon={<IoIosDocument />}
                 position="left"
               />
-            {/* </a> */}
           </Link>
         </div>
       </div>

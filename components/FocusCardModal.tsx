@@ -4,8 +4,6 @@ import { IconX } from "@tabler/icons-react";
 import Image from "next/image";
 import { useState, useEffect } from "react";
 
-// export const FocusCardModal = ({ card, isOpen, onClose }: any) => {
-
   interface Card {
     img: string;
     title?: string;
@@ -24,7 +22,6 @@ import { useState, useEffect } from "react";
   
   export const FocusCardModal: React.FC<FocusCardModalProps> = ({ card, isOpen, onClose }) => {
 
-  // console.log("hereL ",card)
   const [ContentComponent, setContentComponent] = useState<React.ComponentType | null>(null);
 
   useEffect(() => {
@@ -70,7 +67,6 @@ import { useState, useEffect } from "react";
                 <h4 className="text-lg font-semibold mb-4 text-black-100 dark:text-white"> Project Overview </h4>
                 <p className="text-sm font-regular text-black-100 dark:text-white">{card?.overview || "No Title"}</p>
 
-                {/* from here */}
                 {ContentComponent ? (
                   <ContentComponent />
                 ) : (

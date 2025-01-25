@@ -319,21 +319,6 @@ export const navItems = [
     overview:'Greendot is a platform that connects upcycling companies with individuals through a user-friendly app design. This innovative solution addresses the issues of waste supply from upcycling companies, while also offering a way for individuals to earn extra income. The service is available in both Korean and English versions. For the Korean version, a High-Fidelity-Prototype has been created to showcase the app\'s full functionality and features.',
     content:'Greendot'
   },
-  // {
-  //   id: 15,
-  //   title: "Cougar's Mansion",
-  //   type: "Group Project",
-  //   tool: ['Maya', 'Photoshop', 'Unity'],
-  //   timeline:'2 weeks (June 2020)',
-  //   des: "A virtual reality experience that simulates circus games, specifically cup bowling and darts, within the confines of a circus tent.",
-  //   img: "/projects/cougar-mansion/cougar-mansion-mockup.png",
-  //   iconLists: ["/figma.svg"],
-  //   link: "https://github.com/Sookyoung-Park/tripadvisor-landingpage-redesign",
-  //   badge: ["VR Design"],
-  //   isGithub: false,
-  //   overview:'The project “Cougar’s mansion” centers around a virtual reality experience that simulates circus games, specifically cup bowling and darts, within the confines of a circus tent. The aim of this project is to provide users with the opportunity to enjoy the experience of the circus tent in the nighttime winter, which may be otherwise difficult to access. The project seeks to create a vibrant atmosphere through the use of background music and bright colors, and also incorporates unrealistic elements, such as huge cup stacks on the stage that would be impossible in reality. Ultimately, the goal is to provide users with an enjoyable and uplifting experience that elicits positive emotions. I was in charge of all the design process.'
-  // },
-  
   ];
 
   export const socialMedia = [
