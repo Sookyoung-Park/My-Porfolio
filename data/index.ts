@@ -97,12 +97,27 @@ export const navItems = [
 
   export const AllProjects = [
     {
+      id: 0,
+      title: "Portfolio Website",
+      type: "Personal Project",
+      tool: [],
+      timeline: '',
+      des: "A clone of Apple's iPhone 15 Pro website using React.js and TailwindCSS with Three.js and GSAP.",
+      img: "/projects/my-portfolio/my-portfolio-mockup.png",
+      iconLists: ["/next.svg", "/tail.svg", "/ts.svg"],
+      link: "https://github.com/Sookyoung-Park/my-porfolio",
+      badge: ["FrontEnd", "UIUX Design"],
+      isGithub: true,
+      overview: '',
+      content: '',
+    },
+    {
       id: 1,
       title: "Clone Apple Iphone 3D Website",
       type: "Personal Project",
       tool: [],
       timeline: '',
-      des: "A clone of Apple's iPhone 15 Pro website using React.js and TailwindCSS with Three.js and GSAP.",
+      des: "My Portfolio Website using Next.js, Typescript, TailwindCSS and aceternity UI.",
       img: "/projects/apple-website/apple-website-mockup.png",
       iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
       link: "https://github.com/Sookyoung-Park/Apple-Website",
